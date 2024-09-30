@@ -1,0 +1,502 @@
+/* Reset de margens e bordas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #181619;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #e4ded0;
+}
+
+/* Estilização do contêiner */
+.container {
+    text-align: center;
+}
+
+/* Estilização do logo e texto de apresentação */
+.logo{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.logo h1 {
+    font-size: 3em;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.logo p {
+    font-size: 1em;
+    margin-bottom: 50px;
+    color: #e4ded0;
+}
+
+/* Navegação e links */
+nav ul {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1em;
+    font-weight:200;
+    text-decoration: none;
+    color: #e4ded0;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #abccbd;
+}
+
+.reel{
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.video-player{
+
+    width: 50%;
+    height: 50%;
+
+}
+/* Grid Irregular de Projetos */
+.row {
+    
+    display: flex;
+    flex-wrap:wrap-reverse;
+    justify-content: center; /* Centraliza as colunas */
+    padding: 0 5x;
+    flex-direction: row-reverse; /* Inverte a ordem dos projetos */
+}
+
+.column {
+    flex: 30%;
+    max-width: 20%;
+    padding: 0 5px;
+}
+
+.column img {
+    vertical-align: middle;
+    width: 100%;
+   
+}
+
+/* Animação de entrada */
+.column.in-view .project-link {
+    opacity: 1; /* Torna visível quando em vista */
+    transform: translateY(0); /* Move para a posição original */
+}
+
+.project-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-top: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d6e1c775;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #333;
+    font-weight:200;
+    font-size: 50px;
+}
+
+.project-link:hover .overlay {
+    opacity: 1;
+}
+
+
+
+/* Layout responsivo para projetos */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 45%;
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Estilo do rodapé */
+footer {
+    color: #dadada;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 5px;
+}
+
+footer a {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    margin-top: 100px;
+}
+
+
+/* Seção "Sobre Mim" */
+.about-container {
+    margin-top: 50px;
+    position: relative;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.text-box {
+    width: 50%;
+    height: 100%;
+    background-color: #b4b4b4;
+    color: #333;
+    padding: 50px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1.5;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+
+.image-box {
+    width: 60%;
+    height: 650px;
+    background-color: #f0a500;
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+
+.email {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.email a{
+
+    color: #333;
+}
+
+
+
+
+/* Seção de Redes Sociais */
+.social-media {
+    text-align: center;
+    margin-top: 150px;
+    
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+.icons a {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #8d8d8d;
+    transition: color 0.3s;
+}
+
+.icons a:hover {
+    color: #f0a500; /* Cor ao passar o mouse */
+}
+
+
+
+
+
+
+/* Seção de Habilidades e Softwares */
+
+.skills-section {
+    margin-top: 5em;
+    color: #fff; /* cor do texto */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .skills-buttons {
+    margin-bottom: 5em;
+  }
+  
+  .skills-buttons button {
+    background-color: #333; /* cor do botão */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .skills-buttons button:hover {
+    background-color: #555; /* efeito hover */
+  }
+  
+  .software-proficiency {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* espaçamento entre os itens */
+    margin-top: 20px;
+  }
+  
+  .software {
+    text-align: center;
+    margin-bottom: 5em;
+  }
+  
+  .software img {
+    width: 50px; /* tamanho do ícone */
+    height: 50px;
+  }
+  
+  .software span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+
+
+
+
+
+
+/* Seção de projetos */
+#project {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.cover-image {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.legendas{
+
+    text-align: end;
+    font-size: small;
+    margin-top: -1em; 
+    margin-bottom: 2em;
+    margin-right: 3em;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+.cartaz{
+width: 500px;
+height: 800px;
+
+
+}
+
+.row-projects{
+
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center; /* Centraliza as colunas */
+    padding: 0 5x;
+    margin-bottom: 50px;
+
+}
+
+
+.column-projects{
+
+    flex: 25%;
+    padding: 0 4px;
+
+}
+
+.column-projects  img{
+
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+
+
+.text-container{
+
+text-align:center;
+margin-top: 1.5em;
+margin-bottom: 3.5em;
+max-width: 50em;
+
+}
+
+.text-container p{
+text-align: justify;
+margin-top: 5px;
+
+}
+
+.text-container h5{
+
+    margin-top: 50px;
+    
+    }
+
+.text-projects{
+
+    text-align:justify;
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    margin-bottom: 3.5em;
+    max-width: 50em;
+
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    
+    
+    
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Layout responsivo para capa do projeto */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .cover-image, .text-container {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.cover-image_Project {
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
