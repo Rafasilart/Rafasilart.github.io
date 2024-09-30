@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+/* Garantir que não haja overflow lateral */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* Estilo geral do corpo */
 body {
     font-family: 'Montserrat', sans-serif;
@@ -14,11 +20,18 @@ body {
     align-items: center;
     flex-direction: column;
     color: #e4ded0;
+    
 }
 
 /* Estilização do contêiner */
 .container {
     text-align: center;
+    width: 100%;  /* Usa toda a largura da tela */
+    max-width: 1200px;  /* Limita a largura máxima em telas maiores */
+    padding: 0 15px; /* Adiciona padding para não colar nas bordas */
+    box-sizing: border-box;
+
+    
 }
 
 /* Estilização do logo e texto de apresentação */
@@ -43,7 +56,7 @@ body {
 /* Navegação e links */
 nav ul {
     list-style: none;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 nav ul li {
@@ -64,11 +77,89 @@ nav ul li a:hover {
     color: #abccbd;
 }
 
+
+
+/* Menu hamburger para telas pequenas */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #e4ded0;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Esconde o menu de navegação em telas pequenas */
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+
 .reel{
 
     margin-top: 50px;
     margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Para manter a proporção 16:9 */
+    height: 0; /* Altura inicial */
+    overflow: hidden; /* Para esconder qualquer excesso */
+
 }
+
+
+
+.reel iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Para ocupar todo o espaço do contêiner */
+}
+
+/* Media Query para telas maiores */
+@media (min-width: 768px) { /* Ajuste o valor conforme necessário */
+    .reel {
+        max-width: 675px; /* Tamanho máximo do vídeo em telas grandes */
+        margin: 0 auto; /* Centraliza o vídeo */
+        margin-top: -5%;
+    margin-bottom: 0px;
+       
+    }
+}
+
+
 
 .video-player{
 
@@ -88,7 +179,7 @@ nav ul li a:hover {
 
 .column {
     flex: 30%;
-    max-width: 20%;
+    max-width: 30%;
     padding: 0 5px;
 }
 
@@ -141,17 +232,36 @@ nav ul li a:hover {
 
 
 /* Layout responsivo para projetos */
-@media screen and (max-width: 800px) {
+
+/* Para telas menores que 1024px (ex. tablets grandes) */
+@media screen and (max-width: 1024px) {
     .column {
-        flex: 45%;
-        max-width: 45%;
+        flex: 33.33%;  /* 3 colunas */
+        max-width: 33.33%;
     }
 }
 
+/* Para telas menores que 828px (iPhone XR) */
+@media screen and (max-width: 828px) {
+    .column {
+        flex: 33.33%;  /* Mantém 3 colunas */
+        max-width: 33.33%;
+    }
+}
+
+/* Para telas menores que 600px (smartphones menores) */
 @media screen and (max-width: 600px) {
     .column {
-        flex: 100%;
-        max-width: 100%;
+        flex: 33.33%;  /* Reduz para 2 colunas em telas muito pequenas */
+        max-width: 30%;
+    }
+}
+
+/* Para telas menores que 400px (telas muito pequenas) */
+@media screen and (max-width: 400px) {
+    .column {
+        flex: 50%;  /* Cai para 1 coluna em telas muito pequenas */
+        max-width: 30%;
     }
 }
 
@@ -176,23 +286,22 @@ footer a:hover {
     margin-top: 100px;
 }
 
-
 /* Seção "Sobre Mim" */
 .about-container {
     margin-top: 50px;
     position: relative;
-    width: 800px;
-    height: 500px;
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Coloca os elementos um embaixo do outro em telas menores */
+    align-items: center; /* Centraliza os elementos */
+    padding: 0 20px; /* Adiciona um pouco de espaçamento nas laterais */
 }
 
+/* Estilo padrão para o text-box e image-box */
 .text-box {
-    width: 50%;
-    height: 100%;
+    width: 100%; /* Ocupa toda a largura em telas menores */
     background-color: #b4b4b4;
     color: #333;
-    padding: 50px;
+    padding: 20px; /* Menos padding em telas menores */
     box-sizing: border-box;
     font-size: 18px;
     line-height: 1.5;
@@ -202,21 +311,39 @@ footer a:hover {
 }
 
 .image-box {
-    width: 60%;
-    height: 650px;
-    background-color: #f0a500;
-    position: absolute;
-    right: -10px;
-    top: -20px;
-    z-index: 1;
+    width: 100%; /* Ocupa toda a largura em telas menores */
+    height: auto; /* Permite que a altura se ajuste automaticamente */
+ 
     border-radius: 10px;
     overflow: hidden;
+    margin-top: 20px; /* Adiciona margem acima para separação */
 }
 
 .image-box img {
     width: 100%;
-    height: 100%;
+    height: auto; /* Mantém a proporção da imagem */
     object-fit: cover;
+}
+
+/* Media Query para telas maiores */
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row; /* Coloca os elementos lado a lado em telas maiores */
+        justify-content: space-between; /* Espaça os elementos */
+        width: 800px; /* Define a largura máxima */
+        margin: 0 auto; /* Centraliza o contêiner */
+    }
+
+    .text-box {
+        width: 50%; /* Ajusta a largura do text-box */
+        padding: 50px; /* Mantém o padding em telas maiores */
+        text-align: left; /* Alinha o texto à esquerda em telas maiores */
+    }
+
+    .image-box {
+        width: 45%; /* Ajusta a largura do image-box em telas maiores */
+        margin-top: 0; /* Remove a margem superior */
+    }
 }
 
 .download-btn {
@@ -227,9 +354,7 @@ footer a:hover {
     text-decoration: none;
     font-weight: bold;
     text-decoration: underline;
-    
 }
-
 
 .email {
     margin-top: 15px;
@@ -238,19 +363,14 @@ footer a:hover {
     text-decoration: none;
 }
 
-.email a{
-
+.email a {
     color: #333;
 }
-
-
-
 
 /* Seção de Redes Sociais */
 .social-media {
     text-align: center;
-    margin-top: 150px;
-    
+    margin-top: 70px;
 }
 
 .icons {
@@ -268,25 +388,19 @@ footer a:hover {
     color: #f0a500; /* Cor ao passar o mouse */
 }
 
-
-
-
-
-
 /* Seção de Habilidades e Softwares */
-
 .skills-section {
     margin-top: 5em;
     color: #fff; /* cor do texto */
     text-align: center;
     padding: 20px;
-  }
-  
-  .skills-buttons {
+}
+
+.skills-buttons {
     margin-bottom: 5em;
-  }
-  
-  .skills-buttons button {
+}
+
+.skills-buttons button {
     background-color: #333; /* cor do botão */
     color: #fff;
     border: none;
@@ -295,35 +409,36 @@ footer a:hover {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-  }
-  
-  .skills-buttons button:hover {
+}
+
+.skills-buttons button:hover {
     background-color: #555; /* efeito hover */
-  }
-  
-  .software-proficiency {
+}
+
+.software-proficiency {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px; /* espaçamento entre os itens */
     margin-top: 20px;
-  }
-  
-  .software {
+}
+
+.software {
     text-align: center;
     margin-bottom: 5em;
-  }
-  
-  .software img {
+}
+
+.software img {
     width: 50px; /* tamanho do ícone */
     height: 50px;
-  }
-  
-  .software span {
+}
+
+.software span {
     display: block;
     margin-top: 10px;
     font-size: 16px;
-  }
+}
+
   
 
 
@@ -360,11 +475,7 @@ footer a:hover {
     margin-right: 20px;
 }
 
-.gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+
 
 .legendas{
 
@@ -386,6 +497,155 @@ height: 800px;
 
 
 }
+
+
+/* Seção de projetos */
+#project {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px; /* Espaçamento inferior */
+}
+
+.text-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* Tamanho de fonte padrão para desktop */
+.text-container h1 {
+    font-size: 2.5em;
+}
+
+.text-container p {
+    font-size: 1.2em;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.cover-image {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.legendas {
+    text-align: end;
+    font-size: small;
+    margin-top: -1em; 
+    margin-bottom: 2em;
+    margin-right: 3em;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Video e imagem com responsividade */
+.video-container video {
+    width: 100%; /* Ajusta a largura do vídeo para se adaptar ao contêiner */
+    height: auto;
+}
+
+.cartaz {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+/* Video e imagem com responsividade */
+.gallery video {
+    width: 100%; /* O vídeo ocupa 100% da largura disponível */
+    max-width: 100%;
+    height: auto; /* Mantém a proporção original do vídeo */
+    object-fit: cover; /* Garante que o vídeo se ajuste ao contêiner */
+    display: block;
+}
+
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .gallery video {
+        width: 100%; /* O vídeo continua a ocupar toda a largura do contêiner em telas menores */
+        height: auto;
+    }
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .text-container h1 {
+        font-size: 1.8em; /* Diminui o tamanho do título */
+    }
+
+    .text-container p {
+        font-size: 1em; /* Diminui o tamanho do parágrafo */
+    }
+
+    .gallery {
+        gap: 15px; /* Reduz o espaçamento entre os itens na galeria */
+    }
+
+    .legendas {
+        text-align: center; /* Centraliza as legendas em telas menores */
+        font-size: 0.9em; 
+        margin-right: 0; /* Remove o margin-right em telas pequenas */
+    }
+
+    .project-image, .video-container video {
+        width: 100%;
+        max-width: 100%; /* Mantém as imagens e vídeos na largura total da tela */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-container h1 {
+        font-size: 1.5em; /* Reduz ainda mais o tamanho do título */
+    }
+
+    .text-container p {
+        font-size: 0.8em; /* Diminui o tamanho do parágrafo */
+    }
+
+    .legendas {
+        font-size: x-small;
+    }
+
+    .text-container {
+        padding: 10px; /* Reduz o padding em dispositivos muito pequenos */
+    }
+}
+
+
+
 
 .row-projects{
 
@@ -409,6 +669,8 @@ height: 800px;
 
     margin-top: 8px;
     vertical-align: middle;
+    width: 100%; /* Assegura que as imagens se ajustem ao tamanho da coluna */
+    height: auto;
 }
 
 
@@ -419,6 +681,7 @@ text-align:center;
 margin-top: 1.5em;
 margin-bottom: 3.5em;
 max-width: 50em;
+padding: 0 15px; /* Adiciona espaço nas laterais para dispositivos móveis */
 
 }
 
@@ -461,9 +724,52 @@ margin-top: 5px;
 img {
     max-width: 100%;
     height: auto;
+
 }
 
-/* Responsividade */
+/* Centraliza o vídeo e mantém a proporção 16:9 */
+.video-youtube {
+    position: relative;
+    width: 100%;  /* O vídeo ocupará 100% da largura disponível */
+    max-width: 1200px; /* Limite máximo para telas maiores */
+    padding-bottom: 56.25%; /* Mantém a proporção 16:9 */
+    height: 0;
+    margin: 0 auto; /* Centraliza o vídeo */
+    overflow: hidden;
+}
+
+.video-youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* O iframe ocupará 100% da largura do container */
+    height: 100%; /* Ajusta a altura de acordo com a largura */
+}
+
+/* Responsividade para tablets e telas médias */
+@media (max-width: 1024px) {
+    .video-youtube {
+        width: 100%;
+        max-width: none;  /* Remove a largura máxima para telas menores */
+    }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .video-youtube {
+        width: 100%;
+    }
+}
+
+/* Responsividade para telas muito pequenas (smartphones) */
+@media (max-width: 480px) {
+    .video-youtube {
+        width: 100%;
+        padding-bottom: 56.25%; /* Mantém a proporção 16:9 */
+    }
+}
+
+/* Responsividade do grid de projetos */
 @media (max-width: 1024px) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
@@ -480,7 +786,6 @@ img {
     .grid-container {
         grid-template-columns: 1fr;
     }
-
 }
 
 /* Layout responsivo para capa do projeto */
@@ -500,3 +805,4 @@ img {
     height: auto;
     margin-right: 20px;
 }
+

@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="Rafasilart Portfolio - 3D Modeling and Animation">
     <title>Rafasilart - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -14,7 +14,15 @@
         <p>Multimedia Artist | 3D Modeling and Animation</p>
     </div>
     <nav>
-        <ul>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+        <!-- Menu de navegação -->
+        <ul id="nav-links">
             <li><a href="index.html">Portfolio</a></li>
             <li>|</li>
             <li><a href="projects.html">Projects</a></li>
@@ -22,13 +30,15 @@
             <li><a href="aboutme.html">About Me</a></li>
         </ul>
     </nav>
+    
     <div class="container">
 
      <div class="reel">
-        <p>Showreel 2024-2025</p>
-        <iframe src="https://player.vimeo.com/video/1013837884?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="675" height="380" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Showreel 2024 - 3D artist (Multimedia)"></iframe>    </div>
+        
+        <iframe src="https://player.vimeo.com/video/1013837884?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="675" height="380" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Showreel 2024 - 3D artist (Multimedia)"></iframe>    
+    </div>
 <div>
-    <p>Hii! So this is some of my work from school projects and personal works </p>
+    <p>Hi there!! Below, you'll find a selection of my work from school projects as well as some personal creations. Feel free :) </p>
 </div>
         <div class="row" >
 
@@ -112,7 +122,7 @@
                 </a>
 
                 <!-- Bathroom - HAKO -->
-                <a href="projeto7.html" class="project-link" data-aos="fade-up" >
+                <a href="Projetos/Bathroom_HAKO.html" class="project-link" data-aos="fade-up" >
                     <img src="imagens/Capas/Bathrrom.jpg" alt="Projeto 7">
                     <div class="overlay">Bathroom - HAKO</div>
                 </a>
@@ -152,7 +162,12 @@
           
     </div>
     
-   
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-links');
+            nav.classList.toggle('show');
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     AOS.init();

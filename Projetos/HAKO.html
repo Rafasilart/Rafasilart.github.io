@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Rafasilart</title>
+    <title>Rafasilart - Portfolio</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
@@ -11,10 +11,18 @@
   
     <div class="logo">
         <h1>| RAFASILART |</h1>
-        <p>Multimedia Artist - 3D Modeling and Animation</p>
+        <p>Multimedia Artist | 3D Modeling and Animation</p>
     </div>
     <nav>
-        <ul>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+        <!-- Menu de navegação -->
+        <ul id="nav-links">
             <li><a href="../index.html">Portfolio</a></li>
             <li>|</li>
             <li><a href="../projects.html">Projects</a></li>
@@ -22,7 +30,6 @@
             <li><a href="../aboutme.html">About Me</a></li>
         </ul>
     </nav>
-
 <div class="container">
    
     
@@ -40,8 +47,11 @@
                 </div>
             
             <!-- Imagens adicionais abaixo do texto -->
-            <div class="gallery " >
-                <iframe   width="800" height="450" src="https://www.youtube.com/embed/UpubvrMqy94?si=cMztAmeNJNTA_iGh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
+            <div class="gallery" >
+                
+                <div class="video-youtube">
+                    <iframe src="https://www.youtube.com/embed/UpubvrMqy94?si=cMztAmeNJNTA_iGh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>            
                 <p class="legendas"> HAKO Trailer</p>
 
                 <h2>Characters</h2>
@@ -187,6 +197,12 @@
         </div>
       </footer>
    
+      <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-links');
+            nav.classList.toggle('show');
+        }
+    </script>
 <script src="java.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>

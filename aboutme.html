@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Rafasilart</title>
+    <title>Rafasilart - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 <body>
-    <div class="logo">
-        <h1>| RAFASILART |</h1>
-        <p>Multimedia Artist | 3D Modeling and Animation</p>
+  <div class="logo">
+    <h1>| RAFASILART |</h1>
+    <p>Multimedia Artist | 3D Modeling and Animation</p>
+</div>
+<nav>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Portfolio</a></li>
-            <li>|</li>
-            <li><a href="projects.html">Projects</a></li>
-            <li>|</li>
-            <li><a href="aboutme.html">About Me</a></li>
-        </ul>
-    </nav>
+
+    <!-- Menu de navegação -->
+    <ul id="nav-links">
+        <li><a href="index.html">Portfolio</a></li>
+        <li>|</li>
+        <li><a href="projects.html">Projects</a></li>
+        <li>|</li>
+        <li><a href="aboutme.html">About Me</a></li>
+    </ul>
+</nav>
 
     <div class="container">
         <!-- Seção de Sobre Mim -->
@@ -100,6 +108,12 @@
 
     </div>
 
+    <script>
+      function toggleMenu() {
+          const nav = document.getElementById('nav-links');
+          nav.classList.toggle('show');
+      }
+  </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
