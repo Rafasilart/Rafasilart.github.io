@@ -205,6 +205,11 @@ nav ul {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Alterar a saturação da imagem de fundo */
+.project-link:hover img {
+    filter: saturate(1.5); /* Aumenta a saturação */
+}
+
 .overlay {
     position: absolute;
     top: 0;
@@ -218,9 +223,23 @@ nav ul {
     opacity: 0;
     transition: opacity 0.3s ease;
     color: #333;
-    font-weight:200;
+    font-weight:300;
     font-size: 50px;
 }
+
+/* Media queries para ajustar o tamanho da fonte em telas menores */
+@media (max-width: 768px) {
+    .overlay {
+        font-size: 8vw; /* Aumenta o tamanho da fonte em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay {
+        font-size: 5vw; /* Aumenta ainda mais o tamanho da fonte em telas pequenas */
+    }
+}
+
 
 .project-link:hover .overlay {
     opacity: 1;
@@ -459,18 +478,51 @@ footer a:hover {
     text-align: center;
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
+
+/* Project title styling */
+.project-title {
+    font-size: 1.5em;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Adicionado transição de transformação */
+    transform: translateX(20px); /* Iniciar ligeiramente à direita */
 }
 
-.cover-image {
-    width: 50%;
-    height: auto;
-    margin-right: 20px;
+/* Project image styling */
+.cover-image_Project {
+    width: 100%;
+    height: 300px; /* Definir uma altura fixa para todas as imagens */
+    max-width: 600px;
+    object-fit: cover; /* Manter a proporção sem distorcer a imagem */
+    transition: transform 0.3s ease; /* Transição para a transformação */
+}
+
+/* Hover effect for larger screens */
+.header:hover .cover-image_Project {
+    transform: translateX(-20px) scale(0.95); /* Mover imagem para a esquerda e reduzir a escala */
+}
+
+.header:hover .project-title {
+    opacity: 1; /* Mostrar título do projeto ao passar o mouse */
+    transform: translateX(0); /* Mover título para sua posição original */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .cover-image_Project {
+        max-width: 100%;
+    }
+
+    /* Always show project title on small screens */
+    .project-title {
+        opacity: 1;
+        transform: translateX(0); /* Ensure title is in place */
+    }
+
+    /* Disable hover effect for mobile */
+    .header:hover .cover-image_Project {
+        transform: none;
+    }
 }
 
 
