@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafasilart - Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../imagens/icons/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+  
+    <div class="logo">
+        <h1>| RAFASILART |</h1>
+        <p>Multimedia Artist | 3D Modeling and Animation</p>
+    </div>
+    <nav>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+        <!-- Menu de navegação -->
+        <ul id="nav-links">
+            <li><a href="../index.html">Portfolio</a></li>
+            <li>|</li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li>|</li>
+            <li><a href="../aboutme.html">About Me</a></li>
+        </ul>
+    </nav>
+
+<div class="container">
+   
+    
+
+    <section id="project">
+        <div class="project-container">
+            <!-- Imagem de capa e texto ao lado -->
+            
+                <div class="text-container">
+                    <h1>Cleo - Original Character (Android)</h1>
+                      <p> This character was developed in the Animation III course for a final animated film.
+                         All the steps were covered, from the conception of the character sheet to rigging and motion capture animation. 
+                        In the story, Cleo plays the role of a receptionist at a luxurious hotel.</p> 
+                </div>
+            
+            
+            <!-- Imagens adicionais abaixo do texto -->
+            <div class="gallery">
+            
+                <video autoplay loop muted playsinline width="1200" height="635">
+                    <source src="../imagens/CLEO/cleo-turntable.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                <p class="legendas"> Cleo Turntable</p> 
+
+                <img src="../imagens/CLEO/cleo_13.jpg" alt="Imagem do Projeto 1" class="project-image">
+                <p class="legendas"> Cleo Character Sheet (NO CLOTHES)</p>
+
+                <img src="../imagens/CLEO/cleo_14.jpg" alt="Imagem do Projeto 2" class="project-image">
+                <p class="legendas"> Cleo Character Sheet (WITH CLOTHES)</p> 
+
+                <img src="../imagens/CLEO/cleo_01.jpg" alt="Imagem do Projeto 1" class="project-image">
+                <p class="legendas"> Cleo Render Arnold</p>
+
+                <img src="../imagens/CLEO/cleo_02.jpg" alt="Imagem do Projeto 2" class="project-image">
+                <p class="legendas"> Cleo Render Arnold </p> 
+
+                <img src="../imagens/CLEO/cleo_03.jpg" alt="Imagem do Projeto 3" class="project-image">
+                <p class="legendas"> Cleo Render Arnold</p> 
+
+                
+
+                <img src="../imagens/CLEO/cleo_04.jpg" alt="Imagem do Projeto 3" class="project-image">
+                <p class="legendas"> Cleo Render Arnold</p> 
+
+                <img src="../imagens/CLEO/cleo_05.jpg" alt="Imagem do Projeto 3" class="project-image">
+                <p class="legendas"> Wireframe - shaded</p> 
+
+                <img src="../imagens/CLEO/cleo_06.jpg" alt="Imagem do Projeto 3" class="project-image">
+                <p class="legendas"> Wireframe - shaded</p>
+
+                <img src="../imagens/CLEO/cleo_07.jpg" alt="Imagem do Projeto 3" class="project-image">
+                <p class="legendas"> Wireframe</p>
+
+                <img src="../imagens/CLEO/cleo_08.jpg" alt="Imagem do Projeto 3" class="project-image">
+                <p class="legendas"> Wireframe</p>
+
+
+                <img src="../imagens/CLEO/cleo_09.jpg" alt="Imagem do Projeto 3" class="project-image">
+                <p class="legendas"> Wireframe</p>
+
+                <img src="../imagens/CLEO/cleo_10.jpg" alt="Imagem do Projeto 3" class="project-image">
+                <p class="legendas"> UVs Layout</p>
+
+                <img src="../imagens/CLEO/cleo_11.jpg" alt="Imagem do Projeto 3" class="project-image">
+                <p class="legendas"> Texture - Difuse  </p>
+
+                <img src="../imagens/CLEO/cleo_12.jpg" alt="Imagem do Projeto 3" class="project-image">
+                <p class="legendas"> Textures</p>
+
+                <div class="video-youtube">
+                    <iframe src="https://www.youtube.com/embed/mvnM1k--90k?si=X89HOUjS4dRj8nwr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>  
+                    
+                <p class="legendas"> Making of Video Cleo</p>
+            </div>  
+            </div>
+        </div>
+    </section>
+    
+    <p>Software used:</p>
+    <div class="software-proficiency">
+        
+        <div class="software">
+            <img src="../imagens/icons/maya-icon.png" alt="Blender">
+            <span>Maya</span>
+          </div>
+
+        <div class="software">
+          <img src="../imagens/icons/blender-icon.png" alt="Blender">
+          <span>Blender</span>
+        </div>
+       
+        <div class="software">
+          <img src="../imagens/icons/photoshop-icon.png" alt="Photoshop">
+          <span>Photoshop</span>
+        </div>
+       
+      </div>
+    
+    
+</div>
+        
+        
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById('nav-links');
+        nav.classList.toggle('show');
+    }
+</script>
+<script src="java.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+</body>
+</html>
