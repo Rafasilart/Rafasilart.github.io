@@ -5,11 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Garantir que não haja overflow lateral */
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-}
+
 
 /* Estilo geral do corpo */
 body {
@@ -122,6 +118,7 @@ nav ul {
         position: absolute;
         top: 20px;
         right: 20px;
+        
     }
 }
 
@@ -271,6 +268,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 5px;
+    font-size: smaller;
 }
 
 footer a {
@@ -530,6 +528,7 @@ height: 800px;
 
 .text-container p {
     font-size: 1.2em;
+    margin-bottom: 25px;
 }
 
 
