@@ -41,6 +41,7 @@
             
                 <div class="text-container">
                     <h1>'HAKO'</h1>
+                    <h6 class="calendario"> July 17, 2024</h6> 
                     <p>As the final project for the Multimedia Degree at the School of Media Arts and Design of the Polytechnic Institute of Porto (ESMAD P.PORTO), a 3D animation short film was developed. 
                       <p> This animation was created in collaboration with Álvaro Miranda.</p> 
                       <h5> Animation Synopsis:</h5> 
@@ -104,27 +105,24 @@
 
             <div class="row-projects">
                 <div class="column-projects">
-                  <img src="../imagens/HAKO/HAKO1.png">
-                  <img src="../imagens/HAKO/HAKO2.png">
-                  <img src="../imagens/HAKO/HAKO3.jpg">
-                  <img src="../imagens/HAKO/HAKO4.jpg">
-                  
+                    <img src="../imagens/HAKO/HAKO1.png" class="project-link" onclick="openModal();currentSlide(1)">
+                    <img src="../imagens/HAKO/HAKO2.png" class="project-link" onclick="openModal();currentSlide(2)">
+                    <img src="../imagens/HAKO/HAKO3.jpg" class="project-link" onclick="openModal();currentSlide(3)">
+                    <img src="../imagens/HAKO/HAKO4.jpg" class="project-link" onclick="openModal();currentSlide(4)">
                 </div>
                 <div class="column-projects">
-                    <img src="../imagens/HAKO/HAKO5.jpg">
-                    <img src="../imagens/HAKO/HAKO6.jpg">
-                    <img src="../imagens/HAKO/HAKO7.jpg">
-                    <img src="../imagens/HAKO/HAKO8.jpg">
-                  
+                    <img src="../imagens/HAKO/HAKO5.jpg" class="project-link" onclick="openModal();currentSlide(5)">
+                    <img src="../imagens/HAKO/HAKO6.jpg" class="project-link" onclick="openModal();currentSlide(6)">
+                    <img src="../imagens/HAKO/HAKO7.jpg" class="project-link" onclick="openModal();currentSlide(7)">
+                    <img src="../imagens/HAKO/HAKO8.jpg" class="project-link" onclick="openModal();currentSlide(8)">
                 </div>
                 <div class="column-projects">
-                    <img src="../imagens/HAKO/HAKO9.jpg">
-                    <img src="../imagens/HAKO/HAKO10.jpg">
-                    <img src="../imagens/HAKO/HAKO11.jpg">
-                    <img src="../imagens/HAKO/HAKO12.png">
-                 
-                </div>              
-              </div>
+                    <img src="../imagens/HAKO/HAKO9.jpg" class="project-link" onclick="openModal();currentSlide(9)">
+                    <img src="../imagens/HAKO/HAKO10.jpg" class="project-link" onclick="openModal();currentSlide(10)">
+                    <img src="../imagens/HAKO/HAKO11.jpg" class="project-link" onclick="openModal();currentSlide(11)">
+                    <img src="../imagens/HAKO/HAKO12.png" class="project-link" onclick="openModal();currentSlide(12)">
+                </div>
+            </div>
 
 <div class="gallery">
 
@@ -133,13 +131,13 @@
     <div class="row-projects">
 
     <!-- Cemiterio -->
-    <a href="Projetos/Cemetery_HAKO.html" class="project-link" data-aos="fade-up" >
+    <a href="../Projetos/Cemetery_HAKO.html" class="project-link" data-aos="fade-up" >
         <img src="../imagens/HAKO/Capa_Cemetery.jpg" alt="Projeto 8">
         <div class="overlay">Cemetery - HAKO</div>
     </a>
 
     <!-- Bathroom - HAKO -->
-    <a href="projeto7.html" class="project-link" data-aos="fade-up" >
+    <a href="../Projetos/Bathroom_HAKO.html" class="project-link" data-aos="fade-up" >
            <img src="../imagens/HAKO/Capa_Bathroom.jpg" alt="Projeto 7">
            <div class="overlay">Bathroom - HAKO</div>
      </a>
@@ -197,7 +195,53 @@
           <p>Rafasilart - <a href="">rafasilart@gmail.com</a> </p>
         </div>
       </footer>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
    
+
+<script>
+    let slideIndex = 1;
+    const images = document.querySelectorAll('.column-projects img');
+    const modal = document.getElementById("myModal");
+    const modalImage = document.getElementById("modalImage");
+
+    // Abrir modal
+    function openModal() {
+        modal.style.display = "block";
+    }
+
+    // Fechar modal
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    // Mostrar slide atual
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    // Mudar slide
+    function changeSlide(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Função para mostrar slides
+    function showSlides(n) {
+        if (n > images.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = images.length }
+        modalImage.src = images[slideIndex - 1].src;
+    }
+
+    // Iniciar com o primeiro slide
+    showSlides(slideIndex);
+</script>
       <script>
         function toggleMenu() {
             const nav = document.getElementById('nav-links');
