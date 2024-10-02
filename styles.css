@@ -311,24 +311,26 @@ footer a:hover {
     flex-direction: column; /* Coloca os elementos um embaixo do outro em telas menores */
     align-items: center; /* Centraliza os elementos */
     padding: 0 20px; /* Adiciona um pouco de espaçamento nas laterais */
+    
 }
 
 /* Estilo padrão para o text-box e image-box */
 .text-box {
-    width: 100%; /* Ocupa toda a largura em telas menores */
+    width: 85%; /* Ocupa toda a largura em telas menores */
     background-color: #b4b4b4;
     color: #333;
     padding: 20px; /* Menos padding em telas menores */
     box-sizing: border-box;
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 1em;
+    line-height: 1.2;
     z-index: 2;
     position: relative;
     text-align: center;
+    font-weight: 500;
 }
 
 .image-box {
-    width: 100%; /* Ocupa toda a largura em telas menores */
+    width: 70%; /* Ocupa toda a largura em telas menores */
     height: auto; /* Permite que a altura se ajuste automaticamente */
  
     border-radius: 10px;
@@ -340,6 +342,12 @@ footer a:hover {
     width: 100%;
     height: auto; /* Mantém a proporção da imagem */
     object-fit: cover;
+    filter: grayscale();
+}
+
+.image-box img:hover{
+
+    filter: saturate();
 }
 
 /* Media Query para telas maiores */
@@ -365,19 +373,26 @@ footer a:hover {
 
 .download-btn {
     display: inline-block;
+    
     margin-top: 20px;
     padding: 10px 20px;
     color: #333;
     text-decoration: none;
     font-weight: bold;
     text-decoration: underline;
+    
+    margin-bottom: 20px;
+    
+    
 }
 
 .email {
     margin-top: 15px;
-    font-size: 16px;
+    font-size: 1em;
+    font-weight: 600;
     color: #333;
     text-decoration: none;
+    text-align: center;
 }
 
 .email a {
@@ -855,5 +870,62 @@ img {
     width: 100%;
     height: auto;
     margin-right: 20px;
+}
+
+.calendario{
+font-size: 0.8em;
+font-weight: 200;
+margin-top: 20px;
+margin-bottom: 30px;
+
+}
+
+
+ /* Modal */
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal img {
+    width: 100%;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 16px;
+    margin-top: -22px;
+    transition: 0.3s;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
 }
 
