@@ -514,7 +514,7 @@ footer a:hover {
 
 /* Hover effect for larger screens */
 .header:hover .cover-image_Project {
-    transform: translateX(-20px) scale(0.95); /* Mover imagem para a esquerda e reduzir a escala */
+    transform:  scale(0.95); /* Mover imagem para a esquerda e reduzir a escala */
 }
 
 .header:hover .project-title {
@@ -598,9 +598,14 @@ height: 800px;
     margin-bottom: 25px;
 }
 
+.text-container li {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
 
 .header {
-    display: flex;
+    
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -898,6 +903,8 @@ margin-bottom: 30px;
     display: block;
     width: 80%;
     max-width: 700px;
+    height: auto;  /* Ajusta a altura de acordo com a proporção da imagem */
+    object-fit: contain;  /* Garante que a imagem mantenha a proporção */
 }
 .close {
     position: absolute;
@@ -909,7 +916,9 @@ margin-bottom: 30px;
     cursor: pointer;
 }
 .modal img {
+    margin-top: 200px;
     width: 100%;
+    height: auto;  /* Garante que a altura da imagem seja ajustada */
 }
 .prev, .next {
     cursor: pointer;
@@ -929,3 +938,28 @@ margin-bottom: 30px;
     right: 0;
 }
 
+
+/* Container para os vídeos */
+.side-video-container {
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Centraliza os vídeos */
+    gap: 20px;  /* Espaço entre os vídeos */
+}
+
+.side-video-container .video-item {
+    width: 45%;  /* Cada vídeo ocupa 45% do espaço em telas grandes */
+}
+
+.side-video-container .video-item video {
+    width: 100%;  /* O vídeo ocupa 100% da largura do contêiner do item */
+    height: auto; /* Mantém a proporção do vídeo */
+}
+
+/* Layout responsivo para telas menores */
+@media (max-width: 768px) {
+    .side-video-container .video-item {
+        width: 100%;  /* O vídeo ocupa 100% da largura em telas menores */
+    }
+}
