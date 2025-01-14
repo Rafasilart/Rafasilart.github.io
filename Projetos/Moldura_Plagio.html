@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafasilart - Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+  
+    <div class="logo">
+        <h1>| RAFASILART |</h1>
+        <p>Multimedia Artist | 3D Modeling and Animation</p>
+    </div>
+    <nav>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+        <!-- Navigation Menu -->
+        <ul id="nav-links">
+            <li><a href="../index.html">Portfolio</a></li>
+            <li>|</li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li>|</li>
+            <li><a href="../aboutme.html">About Me</a></li>
+        </ul>
+    </nav>
+<div class="container">
+   
+    <section id="project">
+        <div class="project-container">
+            <!-- Cover image and text -->
+            <div class="text-container">
+                <h1>Mona Lisa Frame - "PLÁGIO AO VIVO"</h1>
+                <h6 class="calendario"> December 1, 2024</h6> 
+                <p>The project 'PLÁGIO AO VIVO' was a live show by Mafalda Creative and Mariana Bossy.
+                    I designed a large Renaissance-style 3D frame inspired by the Mona Lisa's,
+                    which was printed at a size of 3m x 4m.</p>
+                    <p> <strong>MAFALDA CREATIVE E MARIANA BOSSY - PLÁGIO AO VIVO - 
+                        <a href="https://kilt.pt/plagio-ao-vivo-mafalda-creative-e-mariana-bossy/">EVENT</a></strong> </p>
+
+                <p>During the process, I handled the STL file preparation to ensure the frame was ready for large-scale 3D printing.</p>
+
+                <p>Below is a gallery showcasing the final 3D model and the printing process:</p>
+               
+            </div>
+            
+            <!-- Additional images below text -->
+            <div class="gallery">
+                <img src="../imagens/Frame_PlagioAoVivo/Frame_Medidas_01.jpg" alt="Frame Render 1">
+                <p class="legendas">Original Scale Print (4m x 5m)</p>
+                <img src="../imagens/Frame_PlagioAoVivo/Frame_02.jpg" alt="Frame Render 2">
+                <p class="legendas">3D Render</p>
+                <img src="../imagens/Frame_PlagioAoVivo/Frame_04.jpg" alt="Frame Print">
+                <p class="legendas">3D Render</p>
+                <img src="../imagens/Frame_PlagioAoVivo/Frame_05.jpg" alt="Frame Print">
+                <p class="legendas">3D Render</p>
+                <img src="../imagens/Frame_PlagioAoVivo/Frame_03.jpg" alt="Frame Print">
+                <p class="legendas">STL Model Preview</p>
+                <img src="../imagens/Frame_PlagioAoVivo/Frame_06.jpg" alt="Frame Print">
+                <p class="legendas">STL 8 Parts - Model Preview</p>
+            </div>
+
+        </div>
+
+            <p class="legendas"> Mona Lisa Frame Gallery</p>
+
+            <div class="row-projects">
+                <div class="column-projects">
+                    <img src="../imagens/Frame_PlagioAoVivo/Frame_Galeria_01.jpg" class="project-link" onclick="openModal();currentSlide(1)">
+                    
+                </div>
+                <div class="column-projects">
+                    <img src="../imagens/Frame_PlagioAoVivo/Frame_Galeria_02.jpg" class="project-link" onclick="openModal();currentSlide(2)">
+                  
+                </div>
+                <div class="column-projects">
+                    <img src="../imagens/Frame_PlagioAoVivo/Frame_Galeria_03.jpg" class="project-link" onclick="openModal();currentSlide(3)">
+                    
+                </div>
+            </div>
+    </section>
+</div>
+        
+<p>Software used:</p>
+<div class="software-proficiency">
+    <div class="software">
+      <img src="../imagens/icons/blender-icon.png" alt="Blender">
+      <span>Blender</span>
+    </div>
+    <div class="software">
+      <img src="../imagens/icons/illustrator-icon.png" alt="Illustrator">
+      <span>Illustrator</span>
+    </div>
+    
+  </div>
+
+    <!-- Simple Footer -->
+    <footer>
+        <div class="footer-content">
+          <p>© 2024 Rafael Silva (Rafasilart). All rights reserved.</p>
+          <p>Made with ❤️ by me</p>
+          <p>Rafasilart - <a href="">rafasilart@gmail.com</a> </p>
+        </div>
+      </footer>
+      <a href="#" class="back-to-top">
+        <img src="../imagens/icons/Arrow.png" alt="" srcset="">
+      </a>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+   
+<script>
+    let slideIndex = 1;
+    const images = document.querySelectorAll('.column-projects img');
+    const modal = document.getElementById("myModal");
+    const modalImage = document.getElementById("modalImage");
+
+    // Open modal
+    function openModal() {
+        modal.style.display = "block";
+    }
+
+    // Close modal
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    // Show current slide
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    // Change slide
+    function changeSlide(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Close modal when clicking outside the image
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Function to show slides
+    function showSlides(n) {
+        if (n > images.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = images.length }
+        modalImage.src = images[slideIndex - 1].src;
+    }
+
+    // Initialize with the first slide
+    showSlides(slideIndex);
+</script>
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById('nav-links');
+        nav.classList.toggle('show');
+    }
+</script>
+<script src="../scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
