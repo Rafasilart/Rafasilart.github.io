@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafasilart - Portfolio</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="icon" type="image/x-icon" href="../imagens/icons/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../imagens/icons/logo_branco.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <img src="../imagens/icons/logo_branco.png" alt="Rafasilart Logo" class="rotating-logo">
+        </div>
+    </div>
+    
     <div class="logo">
-        <h1>| RAFASILART |</h1>
+        <img src="../imagens/icons/logo_branco.png" alt="">
+        <h2>Rafael Silva</h2>
         <p>Multimedia Artist | 3D Modeling and Animation</p>
     </div>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
     <nav>
-        <!-- Hamburger Icon -->
-        <div class="hamburger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+        
     
         <!-- Menu de navegação -->
         <ul id="nav-links">
@@ -31,6 +41,8 @@
             <li><a href="../aboutme.html">About Me</a></li>
         </ul>
     </nav>
+
+
 <div class="container">
    
     
@@ -39,7 +51,7 @@
         <div class="project-container">
             <!-- Imagem de capa e texto ao lado -->
             
-                <div class="text-container">
+                <div class="text-container" id="Focus">
                     <h1>Animation Sketches </h1>
                     <h6 class="calendario"> At the moment</h6> 
                      <p> In this mini project, I want to create several short animations to practice and start understanding timing and how movement influences the narrative as a whole.</p>
@@ -60,7 +72,7 @@
             
     </section>
         
-<p>Software used:</p>
+
 <div class="software-proficiency">
     
     <div class="software">
@@ -80,15 +92,32 @@
       </div>
 
   </div>
-
-    <!-- Footer Simples -->
-    <footer>
+</div>
+     <!-- Footer Redesenhado -->
+     <footer>
         <div class="footer-content">
-          <p>© 2024 Rafael Silva (Rafasilart). Todos os direitos reservados.</p>
-          <p>Feito com ❤️ por mim</p>
-          <p>Rafasilart - <a href="">rafasilart@gmail.com</a> </p>
+            <img src="../imagens/icons/charcar.png" alt="Rafasilart Logo" class="footer-logo">
+            
+            <div class="footer-nav">
+                <a href="../index.html">Portfolio</a>
+                <a href="../projects.html">Projects</a>
+                <a href="../aboutme.html">About Me</a>
+            </div>
+            
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-artstation"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2024 Rafael Silva (Rafasilart). Todos os direitos reservados.</p>
+                <p>Made with <span style="color: var(--laranja-secundario);">❤️</span> by me</p>
+                <p>Contact: <a href="mailto:rafasilart@gmail.com">rafasilart@gmail.com</a></p>
+            </div>
         </div>
-      </footer>
+    </footer>
 
       <a href="#" class="back-to-top">
         <img src="../imagens/icons/Arrow.png" alt="" srcset="">

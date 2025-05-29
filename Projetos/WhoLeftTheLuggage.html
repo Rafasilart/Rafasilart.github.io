@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafasilart - Portfolio</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="icon" type="image/x-icon" href="../imagens/icons/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../imagens/icons/logo_branco.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <img src="../imagens/icons/logo_branco.png" alt="Rafasilart Logo" class="rotating-logo">
+        </div>
+    </div>
+    
     <div class="logo">
-        <h1>| RAFASILART |</h1>
+        <img src="../imagens/icons/logo_branco.png" alt="">
+        <h2>Rafael Silva</h2>
         <p>Multimedia Artist | 3D Modeling and Animation</p>
     </div>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
     <nav>
-        <!-- Hamburger Icon -->
-        <div class="hamburger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+        
     
         <!-- Menu de navegação -->
         <ul id="nav-links">
@@ -31,6 +41,8 @@
             <li><a href="../aboutme.html">About Me</a></li>
         </ul>
     </nav>
+
+
 <div class="container">
    
     
@@ -38,7 +50,7 @@
     <section id="project">
         <div class="project-container">
             <!-- Imagem de capa e texto ao lado -->
-            <div class="text-container">
+            <div class="text-container" id="Focus">
                 <h1>Who Left The Luggage?</h1>
                 <h6 class="calendario"> January 15, 2025</h6> 
                 <p>The project "Who Left The Luggage?" was an experimental animation inspired by the opening sequence of 
@@ -76,32 +88,30 @@
         </div>
 
 
-            <p class="legendas"> Who Left The Luggage Gallery</p>
+            
 
-            <div class="row-projects">
-                <div class="column-projects">
-                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria01.jpg" class="project-link" onclick="openModal();currentSlide(1)">
-                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria02.jpg" class="project-link" onclick="openModal();currentSlide(2)">
-                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria03.jpg" class="project-link" onclick="openModal();currentSlide(3)">
-                    
+            <div class="gallery-row">
+                <div class="gallery-column">
+                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria01.jpg" class="gallery-image" onclick="openModal(1)">
+                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria02.jpg" class="gallery-image" onclick="openModal(2)">
+                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria03.jpg" class="gallery-image" onclick="openModal(3)">
                 </div>
-                <div class="column-projects">
-                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria04.jpg" class="project-link" onclick="openModal();currentSlide(4)">
-                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria05.jpg" class="project-link" onclick="openModal();currentSlide(5)">
-                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria06.jpg" class="project-link" onclick="openModal();currentSlide(6)">
-                    
+                <div class="gallery-column">
+                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria04.jpg" class="gallery-image" onclick="openModal(4)">
+                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria05.jpg" class="gallery-image" onclick="openModal(5)">
+                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria06.jpg" class="gallery-image" onclick="openModal(6)">
                 </div>
-                <div class="column-projects">
-                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria07.jpg" class="project-link" onclick="openModal();currentSlide(7)">
-                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria08.jpg" class="project-link" onclick="openModal();currentSlide(8)">
-                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria08.jpg" class="project-link" onclick="openModal();currentSlide(9)">
-                   
+                <div class="gallery-column">
+                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria07.jpg" class="gallery-image" onclick="openModal(7)">
+                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria08.jpg" class="gallery-image" onclick="openModal(8)">
+                    <img src="../imagens/WhoLeftTheLuggage/WhoLeftTheLuggage_Galeria09.jpg" class="gallery-image" onclick="openModal(9)">
                 </div>
             </div>
+            
 
 
     
-        </div>
+       
     </section>
     
 
@@ -109,7 +119,7 @@
     
 </div>
         
-<p>Software used:</p>
+
 <div class="software-proficiency">
     
     <div class="software">
@@ -128,77 +138,85 @@
       </div>
      
   </div>
-
-    <!-- Footer Simples -->
+</div>
+    <!-- Footer Redesenhado -->
     <footer>
         <div class="footer-content">
-          <p>© 2024 Rafael Silva (Rafasilart). Todos os direitos reservados.</p>
-          <p>Feito com ❤️ por mim</p>
-          <p>Rafasilart - <a href="">rafasilart@gmail.com</a> </p>
+            <img src="../imagens/icons/charcar.png" alt="Rafasilart Logo" class="footer-logo">
+            
+            <div class="footer-nav">
+                <a href="../index.html">Portfolio</a>
+                <a href="../projects.html">Projects</a>
+                <a href="../aboutme.html">About Me</a>
+            </div>
+            
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-artstation"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2024 Rafael Silva (Rafasilart). Todos os direitos reservados.</p>
+                <p>Made with <span style="color: var(--laranja-secundario);">❤️</span> by me</p>
+                <p>Contact: <a href="mailto:rafasilart@gmail.com">rafasilart@gmail.com</a></p>
+            </div>
         </div>
-      </footer>
+    </footer>
+
+
       <a href="#" class="back-to-top">
         <img src="../imagens/icons/Arrow.png" alt="" srcset="">
       </a>
 
 
 <!-- Modal -->
-<div id="myModal" class="modal">
+<div id="modal" class="modal" onclick="closeModalOnOutsideClick(event)">
     <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="modalImage">
-    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    <div class="modal-content">
+        <div class="slide"><img src="../imagens/WhoLeftTheLuggage/Image1.jpg"></div>
+        <div class="slide"><img src="../imagens/WhoLeftTheLuggage/Image2.jpg"></div>
+        <div class="slide"><img src="../imagens/WhoLeftTheLuggage/Image3.jpg"></div>
+        <div class="slide"><img src="../imagens/WhoLeftTheLuggage/Image4.jpg"></div>
+        <div class="slide"><img src="../imagens/WhoLeftTheLuggage/Image5.jpg"></div>
+        <a class="prev" onclick="changeSlide(-1)">❮</a>
+        <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
 </div>
    
 
 <script>
-    let slideIndex = 1;
-    const images = document.querySelectorAll('.column-projects img');
-    const modal = document.getElementById("myModal");
-    const modalImage = document.getElementById("modalImage");
+    let currentIndex = 0;
 
-    // Abrir modal
-    function openModal() {
-        modal.style.display = "block";
-    }
+function openModal(index) {
+    currentIndex = index;
+    document.getElementById("modal").style.display = "flex";
+    showSlide(currentIndex);
+}
 
-    // Fechar modal
-    function closeModal() {
-        modal.style.display = "none";
-    }
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
 
-    // Mostrar slide atual
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
+function changeSlide(n) {
+    showSlide(currentIndex += n);
+}
 
-    // Mudar slide
-    function changeSlide(n) {
-        showSlides(slideIndex += n);
-    }
+function showSlide(index) {
+    const slides = document.querySelectorAll(".slide");
+    if (index > slides.length) currentIndex = 1;
+    if (index < 1) currentIndex = slides.length;
 
-    // Fechar modal ao clicar fora da imagem
-    modal.addEventListener('click', function(event) {
-        if (event.target === modal) {
-            closeModal();
-        }
-    });
+    slides.forEach(slide => slide.style.display = "none");
+    slides[currentIndex - 1].style.display = "block";
+}
 
-    // Função para mostrar slides
-    function showSlides(n) {
-        if (n > images.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = images.length }
-        modalImage.src = images[slideIndex - 1].src;
-    }
-
-    // Iniciar com o primeiro slide
-    showSlides(slideIndex);
-</script>
-      <script>
-        function toggleMenu() {
-            const nav = document.getElementById('nav-links');
-            nav.classList.toggle('show');
-        }
+function closeModalOnOutsideClick(event) {
+    const modal = document.getElementById("modal");
+    const content = document.querySelector(".modal-content");
+    if (!content.contains(event.target)) closeModal();
+}
     </script>
 <script src="../scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
