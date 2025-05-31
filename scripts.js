@@ -21,3 +21,15 @@ document.addEventListener("DOMContentLoaded", function() {
         preloader.style.display = "none";
     }, 500); // Adjust delay for fade-out effect
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll("#nav-links a");
+  const currentPath = window.location.pathname.split("/").pop(); // ex: "index.html"
+
+  links.forEach(link => {
+    const linkPath = link.getAttribute("href").split("/").pop();
+    if (linkPath === currentPath || (linkPath === "index.html" && currentPath === "")) {
+      link.classList.add("active");
+    }
+  });
+});
