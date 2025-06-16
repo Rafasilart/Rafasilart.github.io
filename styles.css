@@ -1259,6 +1259,19 @@
     border: none;
 }
 
+.legendas-gallery {
+    margin-top: 5%;
+}
+
+.link-eventos {
+    color: #ff9800;
+     font-weight: bold;
+      text-decoration: underline;
+       background: #222;
+        padding: 2px 8px;
+         border-radius: 4px;
+}
+
 
   /* Estilo da galeria */
 .gallery-row {
@@ -1266,6 +1279,7 @@
     flex-wrap: wrap;
     gap: 15px; /* Espaçamento entre as colunas */
     justify-content: center;
+    margin-top: 5%;
 }
 
 .gallery-column {
