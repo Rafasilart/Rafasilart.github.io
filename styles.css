@@ -1319,6 +1319,7 @@
     gap: 15px; /* Espaçamento entre as colunas */
     justify-content: center;
     margin-top: 5%;
+      margin-bottom: 5%;
 }
 
 .gallery-column {
