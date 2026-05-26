@@ -1,0 +1,238 @@
+{
+  "projects": [
+    {
+      "id": "mock-festival",
+      "name": "MOCK FESTIVAL - Cinema São Jorge",
+      "mainImage": "img/Cinema_SJorge/Mock.png",
+      "topViewImage": "img/Cinema_SJorge/topview.jpg",
+      "rooms": [
+        { "name": "Sala 1 - Podcast", "file": "Cinema_SJorge/Sala1-2.jpg", "versao": "3" },
+        { "name": "Sala 1 - Stand Up Comedy", "file": "Cinema_SJorge/Sala1.jpg", "versao": "2" },
+        { "name": "Sala 2", "file": "Cinema_SJorge/Sala2.jpg" },
+        { "name": "Sala 3 - FFMS", "file": "Cinema_SJorge/Sala3_FFMS.jpg" },
+        { "name": "Sala 3 - Cinema", "file": "Cinema_SJorge/Sala3_Cinema.jpg" },
+        { "name": "Sala 4", "file": "Cinema_SJorge/Sala4.jpg" },
+        { "name": "Entrada", "file": "Cinema_SJorge/Entrada.jpg"},
+        { "name": "Piso1", "file": "Cinema_SJorge/Piso1.jpg" },
+        { "name": "Zona Radio Comercial", "file": "Cinema_SJorge/Zona_Radio.jpg" },
+        { "name": "Escadas", "file": "Cinema_SJorge/Escadas.jpg" },
+        { "name": "Piso2", "file": "Cinema_SJorge/Piso2.jpg" },
+        { "name": "AV 1", "file": "Cinema_SJorge/AV1.jpg" },
+        { "name": "AV 2", "file": "Cinema_SJorge/AV2.jpg" },
+        { "name": "AV 3", "file": "Cinema_SJorge/AV3.jpg" }
+      ],
+      "hotspots": [
+        { "from": "Cinema_SJorge/Entrada.jpg", "to": "Cinema_SJorge/Piso1.jpg", "text": "Entrar no Piso 1", "pitch": -15, "yaw": 10 },
+        { "from": "Cinema_SJorge/Entrada.jpg", "to": "Cinema_SJorge/AV1.jpg", "text": "Avenida da Liberdade", "pitch": -15, "yaw": 180 },
+        { "from": "Cinema_SJorge/Piso1.jpg", "to": "Cinema_SJorge/Escadas.jpg", "text": "Ir para Escadas", "pitch": -5, "yaw": -13 },
+        { "from": "Cinema_SJorge/Piso1.jpg", "to": "Cinema_SJorge/Zona_Radio.jpg", "text": "Ir para Zona Radio Comercial", "pitch": -8, "yaw": 6 },
+        { "from": "Cinema_SJorge/Piso1.jpg", "to": "Cinema_SJorge/Sala2.jpg", "text": "Sala 2", "pitch": -5, "yaw": 45 },
+        { "from": "Cinema_SJorge/Piso1.jpg", "to": "Cinema_SJorge/Sala3_FFMS.jpg", "text": "Sala 3", "pitch": -5, "yaw": 123 },
+        { "from": "Cinema_SJorge/Piso1.jpg", "to": "Cinema_SJorge/Entrada.jpg", "text": "Entrada", "pitch": -10, "yaw": 178 },
+        { "from": "Cinema_SJorge/Escadas.jpg", "to": "Cinema_SJorge/Piso2.jpg", "text": "Subir para Piso 2", "pitch": -5, "yaw": 0 },
+        { "from": "Cinema_SJorge/Escadas.jpg", "to": "Cinema_SJorge/Piso1.jpg", "text": "Descer para Piso 1", "pitch": -18, "yaw": 45 },
+        { "from": "Cinema_SJorge/Piso2.jpg", "to": "Cinema_SJorge/Sala1.jpg", "text": "Sala 1", "pitch": -5, "yaw": -130 },
+        { "from": "Cinema_SJorge/Piso2.jpg", "to": "Cinema_SJorge/Sala1.jpg", "text": "Sala 1", "pitch": -5, "yaw": -63 },
+        { "from": "Cinema_SJorge/Piso2.jpg", "to": "Cinema_SJorge/Escadas.jpg", "text": "Descer Escadas", "pitch": -10, "yaw": -170 },
+        { "from": "Cinema_SJorge/Sala1.jpg", "to": "Cinema_SJorge/Piso2.jpg", "text": "Piso 2", "pitch": 0, "yaw": -150 },
+        { "from": "Cinema_SJorge/Sala1.jpg", "to": "Cinema_SJorge/Piso2.jpg", "text": "Piso 2", "pitch": 0, "yaw": -210 },
+        { "from": "Cinema_SJorge/Sala1-1.jpg", "to": "Cinema_SJorge/Piso2.jpg", "text": "Piso 2", "pitch": 0, "yaw": -150 },
+        { "from": "Cinema_SJorge/Sala1-1.jpg", "to": "Cinema_SJorge/Piso2.jpg", "text": "Piso 2", "pitch": 0, "yaw": -210 },
+        { "from": "Cinema_SJorge/Sala1-2.jpg", "to": "Cinema_SJorge/Piso2.jpg", "text": "Piso 2", "pitch": 0, "yaw": -150 },
+        { "from": "Cinema_SJorge/Sala1-2.jpg", "to": "Cinema_SJorge/Piso2.jpg", "text": "Piso 2", "pitch": 0, "yaw": -210 },
+        { "from": "Cinema_SJorge/Zona_Radio.jpg", "to": "Cinema_SJorge/Piso1.jpg", "text": "Piso 1", "pitch": 0, "yaw": -160 },
+        { "from": "Cinema_SJorge/Sala3_FFMS.jpg", "to": "Cinema_SJorge/Piso1.jpg", "text": "Piso 1", "pitch": -5, "yaw": 180 },
+        { "from": "Cinema_SJorge/Sala3_Cinema.jpg", "to": "Cinema_SJorge/Piso1.jpg", "text": "Piso 1", "pitch": -5, "yaw": 180 },
+        { "from": "Cinema_SJorge/Sala3_Cinema.jpg", "to": "Cinema_SJorge/Sala4.jpg", "text": "Sala 4", "pitch": -8, "yaw": 32 },
+        { "from": "Cinema_SJorge/Sala3_FFMS.jpg", "to": "Cinema_SJorge/Sala4.jpg", "text": "Sala 4", "pitch": -8, "yaw": 41 },
+        { "from": "Cinema_SJorge/Sala4.jpg", "to": "Cinema_SJorge/Sala3_FFMS.jpg", "text": "Sala 3", "pitch": -5, "yaw": -40 },
+        { "from": "Cinema_SJorge/Sala2.jpg", "to": "Cinema_SJorge/Piso1.jpg", "text": "Piso 1", "pitch": 0, "yaw": 200 },
+        { "from": "Cinema_SJorge/AV1.jpg", "to": "Cinema_SJorge/AV2.jpg", "text": "Zona Comida", "pitch": -5, "yaw": -10 },
+        { "from": "Cinema_SJorge/AV1.jpg", "to": "Cinema_SJorge/AV3.jpg", "text": "Zona Palco", "pitch": -15, "yaw": 100 },
+        { "from": "Cinema_SJorge/AV1.jpg", "to": "Cinema_SJorge/Entrada.jpg", "text": "Entrada Cinema São Jorge", "pitch": -5, "yaw": 42 },
+        { "from": "Cinema_SJorge/AV3.jpg", "to": "Cinema_SJorge/AV2.jpg", "text": "Zona Comida", "pitch": 0, "yaw": -10 },
+        { "from": "Cinema_SJorge/AV3.jpg", "to": "Cinema_SJorge/AV1.jpg", "text": "Zona Central", "pitch": -15, "yaw": -100 },
+        { "from": "Cinema_SJorge/AV3.jpg", "to": "Cinema_SJorge/Entrada.jpg", "text": "Entrada Cinema São Jorge", "pitch": -5, "yaw": 42 },
+        { "from": "Cinema_SJorge/AV2.jpg", "to": "Cinema_SJorge/AV1.jpg", "text": "Zona Central", "pitch": -5, "yaw": -225 }
+      ],
+      "topViewHotspots": [
+        { "left": "50%", "top": "32%", "target": "Cinema_SJorge/AV3.jpg", "title": "Zona Palco" },
+        { "left": "20%", "top": "12%", "target": "Cinema_SJorge/Entrada.jpg", "title": "Entrada" },
+        { "left": "62%", "top": "50%", "target": "Cinema_SJorge/AV1.jpg", "title": "Zona Central" },
+        { "left": "22%", "top": "50%", "target": "Cinema_SJorge/AV2.jpg", "title": "Zona Comida" }
+      ]
+    },
+
+
+    
+    {
+  "id": "kilt-street",
+  "name": "KILT STREET",
+  "mainImage": "img/Kilt_Street/Capa2.png",
+  "topViewImage": "img/Kilt_Street/topview.png",
+  "images": [
+        { "file": "VISTA_TOPO.png", "caption": "Vista aérea" }
+       
+         ],
+
+  "rooms": [
+    { "name": "KILT 1", "file": "Kilt_Street/KiltStreet_P1.jpg"},
+    { "name": "KILT 2", "file": "Kilt_Street/KiltStreet_P1.5.jpg"},
+    { "name": "KILT 3", "file": "Kilt_Street/KiltStreet_P2.jpg"},
+    { "name": "Estacionamento 1", "file": "Kilt_Street/KiltStreet_P13.jpg"},
+    { "name": "Lojas 1", "file": "Kilt_Street/KiltStreet_P3.jpg"},
+    { "name": "Lojas 2", "file": "Kilt_Street/KiltStreet_P4.5.jpg"},
+    { "name": "Lojas 3", "file": "Kilt_Street/KiltStreet_P4.jpg"},
+    { "name": "Lojas 4", "file": "Kilt_Street/KiltStreet_P5.jpg"},
+    { "name": "BlackBox | Feira", "file": "Kilt_Street/KiltStreet_P12.jpg"},  
+    { "name": "Lojas 5", "file": "Kilt_Street/KiltStreet_P6.jpg"},
+    { "name": "Lojas 6", "file": "Kilt_Street/KiltStreet_P7.jpg"},
+    { "name": "Lojas 7", "file": "Kilt_Street/KiltStreet_P8.jpg"}, 
+    { "name": "Lojas 8", "file": "Kilt_Street/KiltStreet_P9.jpg"}, 
+    { "name": "Jardim 1", "file": "Kilt_Street/KiltStreet_P10.jpg"},
+    { "name": "Jardim 2", "file": "Kilt_Street/KiltStreet_P10.5.jpg"},
+    { "name": "KILT STREET", "file": "Kilt_Street/KiltStreet_P11.jpg"}
+    
+
+
+  ],
+  "hotspots": [
+    { "from": "Kilt_Street/KiltStreet_P1.jpg", "to": "Kilt_Street/KiltStreet_P1.5.jpg", "text": "Ir para KILT 2", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P1.5.jpg", "to": "Kilt_Street/KiltStreet_P1.jpg", "text": "Ir para KILT 1", "pitch": -5, "yaw": -180 },
+    { "from": "Kilt_Street/KiltStreet_P1.5.jpg", "to": "Kilt_Street/KiltStreet_P2.jpg", "text": "Ir para KILT 3", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P2.jpg", "to": "Kilt_Street/KiltStreet_P3.jpg", "text": "Ir para Lojas 1", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P2.jpg", "to": "Kilt_Street/KiltStreet_P1.5.jpg", "text": "KILT 2", "pitch": -5, "yaw": 180 },
+    { "from": "Kilt_Street/KiltStreet_P3.jpg", "to": "Kilt_Street/KiltStreet_P2.jpg", "text": "Ir para KILT 2", "pitch": -5, "yaw": 180 },
+    { "from": "Kilt_Street/KiltStreet_P2.jpg", "to": "Kilt_Street/KiltStreet_P13.jpg", "text": "Ir para Estacionamento 1", "pitch": -5, "yaw": 60 },
+    { "from": "Kilt_Street/KiltStreet_P13.jpg", "to": "Kilt_Street/KiltStreet_P2.jpg", "text": "Ir para KILT 2", "pitch": -5, "yaw": 60 },
+    { "from": "Kilt_Street/KiltStreet_P13.jpg", "to": "Kilt_Street/KiltStreet_P3.jpg", "text": "Ir para Lojas 1", "pitch": -5, "yaw": 125 },
+    { "from": "Kilt_Street/KiltStreet_P3.jpg", "to": "Kilt_Street/KiltStreet_P4.5.jpg", "text": "Ir para Lojas 2", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P4.5.jpg", "to": "Kilt_Street/KiltStreet_P3.jpg", "text": "Ir para Lojas 1", "pitch": -5, "yaw": 180 },
+    { "from": "Kilt_Street/KiltStreet_P4.5.jpg", "to": "Kilt_Street/KiltStreet_P4.jpg", "text": "Ir para Lojas 3", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P4.jpg", "to": "Kilt_Street/KiltStreet_P5.jpg", "text": "Ir para Lojas 4", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P4.jpg", "to": "Kilt_Street/KiltStreet_P4.5.jpg", "text": "Ir para Lojas 2", "pitch": -5, "yaw": 180 },
+    { "from": "Kilt_Street/KiltStreet_P5.jpg", "to": "Kilt_Street/KiltStreet_P12.jpg", "text": "Ir para BlackBox | Feira", "pitch": -5, "yaw": 90 },
+    { "from": "Kilt_Street/KiltStreet_P12.jpg", "to": "Kilt_Street/KiltStreet_P4.jpg", "text": "Ir para Lojas 3", "pitch": -4, "yaw": 40 },
+    { "from": "Kilt_Street/KiltStreet_P12.jpg", "to": "Kilt_Street/KiltStreet_P5.jpg", "text": "Ir para Lojas 4", "pitch": -5, "yaw": 90 },
+    { "from": "Kilt_Street/KiltStreet_P12.jpg", "to": "Kilt_Street/KiltStreet_P6.jpg", "text": "Ir para Lojas 5", "pitch": -4, "yaw": 135 },
+    { "from": "Kilt_Street/KiltStreet_P5.jpg", "to": "Kilt_Street/KiltStreet_P6.jpg", "text": "Ir para Lojas 5", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P5.jpg", "to": "Kilt_Street/KiltStreet_P4.jpg", "text": "Ir para Lojas 3", "pitch": -5, "yaw": 180 },
+    { "from": "Kilt_Street/KiltStreet_P6.jpg", "to": "Kilt_Street/KiltStreet_P5.jpg", "text": "Ir para Lojas 4", "pitch": -5, "yaw": 180 },
+    { "from": "Kilt_Street/KiltStreet_P6.jpg", "to": "Kilt_Street/KiltStreet_P7.jpg", "text": "Ir para Lojas 6", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P7.jpg", "to": "Kilt_Street/KiltStreet_P6.jpg", "text": "Ir para Lojas 5", "pitch": -5, "yaw": 180 },
+    { "from": "Kilt_Street/KiltStreet_P7.jpg", "to": "Kilt_Street/KiltStreet_P8.jpg", "text": "Ir para Lojas 7", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P8.jpg", "to": "Kilt_Street/KiltStreet_P7.jpg", "text": "Ir para Lojas 6", "pitch": -5, "yaw": 180 },
+    { "from": "Kilt_Street/KiltStreet_P8.jpg", "to": "Kilt_Street/KiltStreet_P9.jpg", "text": "Ir para Lojas 8", "pitch": -4, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P9.jpg", "to": "Kilt_Street/KiltStreet_P8.jpg", "text": "Ir para Lojas 7", "pitch": -5, "yaw": 180 },
+    { "from": "Kilt_Street/KiltStreet_P9.jpg", "to": "Kilt_Street/KiltStreet_P10.jpg", "text": "Ir para Jardim 1", "pitch": -3, "yaw": 15 },
+    { "from": "Kilt_Street/KiltStreet_P9.jpg", "to": "Kilt_Street/KiltStreet_P11.jpg", "text": "KILT STREET", "pitch": -5, "yaw": 90 },
+    { "from": "Kilt_Street/KiltStreet_P10.jpg", "to": "Kilt_Street/KiltStreet_P9.jpg", "text": "Ir para Lojas 8", "pitch": -3, "yaw": 190 },
+    { "from": "Kilt_Street/KiltStreet_P11.jpg", "to": "Kilt_Street/KiltStreet_P9.jpg", "text": "Ir para Lojas 8", "pitch": -5, "yaw": 90 },
+    { "from": "Kilt_Street/KiltStreet_P11.jpg", "to": "Kilt_Street/KiltStreet_P10.jpg", "text": "Ir para Jardim 1", "pitch": -3, "yaw": 155},
+    { "from": "Kilt_Street/KiltStreet_P10.jpg", "to": "Kilt_Street/KiltStreet_P10.5.jpg", "text": "Ir para Jardim 2", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P10.5.jpg", "to": "Kilt_Street/KiltStreet_P10.jpg", "text": "Ir para Jardim 1", "pitch": -5, "yaw": 180 }
+  ],
+  
+  "topViewHotspots": [
+    { "left": "98%", "top": "42%", "target": "Kilt_Street/KiltStreet_P1.jpg", "title": "KILT 1" },
+    { "left": "90%", "top": "42%", "target": "Kilt_Street/KiltStreet_P1.5.jpg", "title": "KILT 2" },
+    { "left": "82%", "top": "42%", "target": "Kilt_Street/KiltStreet_P2.jpg", "title": "KILT 3" },
+    { "left": "70%", "top": "42%", "target": "Kilt_Street/KiltStreet_P3.jpg", "title": "Lojas 1" },
+    { "left": "61%", "top": "42%", "target": "Kilt_Street/KiltStreet_P4.5.jpg", "title": "Lojas 2" },
+    { "left": "54%", "top": "42%", "target": "Kilt_Street/KiltStreet_P4.jpg", "title": "Lojas 3" },
+    { "left": "50%", "top": "42%", "target": "Kilt_Street/KiltStreet_P5.jpg", "title": "Lojas 4" },
+    { "left": "44%", "top": "42%", "target": "Kilt_Street/KiltStreet_P6.jpg", "title": "Lojas 5"},
+    { "left": "34%", "top": "42%", "target": "Kilt_Street/KiltStreet_P7.jpg", "title": "Lojas 6" },
+    { "left": "28%", "top": "42%", "target": "Kilt_Street/KiltStreet_P8.jpg", "title": "Lojas 7" },
+    { "left": "22%", "top": "42%", "target": "Kilt_Street/KiltStreet_P9.jpg", "title": "Lojas 8" },
+    { "left": "12%", "top": "40%", "target": "Kilt_Street/KiltStreet_P10.jpg", "title": "Jardim 1" },
+    { "left": "5%", "top": "40%", "target": "Kilt_Street/KiltStreet_P10.5.jpg", "title": "Jardim 2" },
+    { "left": "77%", "top": "35%", "target": "Kilt_Street/KiltStreet_P13.jpg", "title": "Estacionamento 1" },
+    { "left": "50%", "top": "35%", "target": "Kilt_Street/KiltStreet_P12.jpg", "title": "Estacionamento 2" },
+    { "left": "23%", "top": "35%", "target": "Kilt_Street/KiltStreet_P11.jpg", "title": "Estacionamento 3" }
+  ]
+},
+
+{
+      "id": "mock-festival2026",
+      "name": "WORTEN MOCK FESTIVAL 2026 - Cinema São Jorge",
+      "mainImage": "img/MOCK2026/Mock.png",
+      "topViewImage": "img/MOCK2026/topview.jpg",
+      "images": [
+        { "file": "WortenMockCAST.jpg", "caption": "WortenMockCAST" },
+        { "file": "PorticoAV.jpg", "caption": "Pórtico" },
+        { "file": "Palco.jpg", "caption": "Palco" },
+        { "file": "Artefacto_Worten01.jpg", "caption": "Artefacto Frente" },
+        { "file": "Artefacto_Worten02.jpg", "caption": "Artefacto Lado" },
+        { "file": "Artefacto_Worten03.jpg", "caption": "Artefacto Trás" }
+        
+
+        
+      ],
+      "rooms": [
+      
+        { "name": "Sala 1 - PODCAST", "file": "MOCK2026/Sala1_PODCAST.jpg", "versao": "2" },
+        { "name": "Sala 1 - STAND UP", "file": "MOCK2026/Sala1_STANDUP.jpg", "versao": "2" },
+
+        { "name": "Sala 2", "file": "MOCK2026/Sala2.jpg" },
+        { "name": "Sala 4", "file": "MOCK2026/Sala4.jpg" },
+        
+        
+       
+        { "name": "Entrada", "file": "MOCK2026/Entrada.jpg"},
+        { "name": "Piso1", "file": "MOCK2026/Piso1.jpg" },
+       
+        { "name": "Escadas", "file": "MOCK2026/Escadas.jpg" },
+        { "name": "Piso2", "file": "MOCK2026/Piso2.jpg" },
+        { "name": "AV 1", "file": "MOCK2026/AV1.jpg" },
+        { "name": "AV 2", "file": "MOCK2026/AV2.jpg" },
+        { "name": "AV 3", "file": "MOCK2026/AV3.jpg" }
+      ],
+      "hotspots": [
+        { "from": "MOCK2026/Entrada.jpg", "to": "MOCK2026/Piso1.jpg", "text": "Entrar no Piso 1", "pitch": -15, "yaw": 10 },
+        { "from": "MOCK2026/Entrada.jpg", "to": "MOCK2026/AV1.jpg", "text": "Avenida da Liberdade", "pitch": -15, "yaw": 180 },
+        { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Escadas.jpg", "text": "Ir para Escadas", "pitch": -5, "yaw": -13 },
+        { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Zona_Radio.jpg", "text": "Ir para Zona Radio Comercial", "pitch": -8, "yaw": 6 },
+        { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Sala2.jpg", "text": "Sala 2", "pitch": -5, "yaw": 45 },
+        { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Sala3_FFMS.jpg", "text": "Sala 3", "pitch": -5, "yaw": 123 },
+        { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Entrada.jpg", "text": "Entrada", "pitch": -10, "yaw": 178 },
+        { "from": "MOCK2026/Escadas.jpg", "to": "MOCK2026/Piso2.jpg", "text": "Subir para Piso 2", "pitch": -5, "yaw": 0 },
+        { "from": "MOCK2026/Escadas.jpg", "to": "MOCK2026/Piso1.jpg", "text": "Descer para Piso 1", "pitch": -18, "yaw": 45 },
+        { "from": "MOCK2026/Piso2.jpg", "to": "MOCK2026/Sala1.jpg", "text": "Sala 1", "pitch": -5, "yaw": -130 },
+        { "from": "MOCK2026/Piso2.jpg", "to": "MOCK2026/Sala1.jpg", "text": "Sala 1", "pitch": -5, "yaw": -63 },
+        { "from": "MOCK2026/Piso2.jpg", "to": "MOCK2026/Escadas.jpg", "text": "Descer Escadas", "pitch": -10, "yaw": -170 },
+        { "from": "MOCK2026/Sala1.jpg", "to": "MOCK2026/Piso2.jpg", "text": "Piso 2", "pitch": 0, "yaw": -150 },
+        { "from": "MOCK2026/Sala1.jpg", "to": "MOCK2026/Piso2.jpg", "text": "Piso 2", "pitch": 0, "yaw": -210 },
+        { "from": "MOCK2026/Sala1-1.jpg", "to": "MOCK2026/Piso2.jpg", "text": "Piso 2", "pitch": 0, "yaw": -150 },
+        { "from": "MOCK2026/Sala1-1.jpg", "to": "MOCK2026/Piso2.jpg", "text": "Piso 2", "pitch": 0, "yaw": -210 },
+        { "from": "MOCK2026/Sala1-2.jpg", "to": "MOCK2026/Piso2.jpg", "text": "Piso 2", "pitch": 0, "yaw": -150 },
+        { "from": "MOCK2026/Sala1-2.jpg", "to": "MOCK2026/Piso2.jpg", "text": "Piso 2", "pitch": 0, "yaw": -210 },
+        { "from": "MOCK2026/Zona_Radio.jpg", "to": "MOCK2026/Piso1.jpg", "text": "Piso 1", "pitch": 0, "yaw": -160 },
+        { "from": "MOCK2026/Sala3_FFMS.jpg", "to": "MOCK2026/Piso1.jpg", "text": "Piso 1", "pitch": -5, "yaw": 180 },
+        { "from": "MOCK2026/Sala3_Cinema.jpg", "to": "MOCK2026/Piso1.jpg", "text": "Piso 1", "pitch": -5, "yaw": 180 },
+        { "from": "MOCK2026/Sala3_Cinema.jpg", "to": "MOCK2026/Sala4.jpg", "text": "Sala 4", "pitch": -8, "yaw": 32 },
+        { "from": "MOCK2026/Sala3_FFMS.jpg", "to": "MOCK2026/Sala4.jpg", "text": "Sala 4", "pitch": -8, "yaw": 41 },
+        { "from": "MOCK2026/Sala4.jpg", "to": "MOCK2026/Sala3_FFMS.jpg", "text": "Sala 3", "pitch": -5, "yaw": -40 },
+        { "from": "MOCK2026/Sala2.jpg", "to": "MOCK2026/Piso1.jpg", "text": "Piso 1", "pitch": 0, "yaw": 200 },
+        { "from": "MOCK2026/AV1.jpg", "to": "MOCK2026/AV2.jpg", "text": "Zona Comida", "pitch": -5, "yaw": -10 },
+        { "from": "MOCK2026/AV1.jpg", "to": "MOCK2026/AV3.jpg", "text": "Zona Palco", "pitch": -15, "yaw": 100 },
+        { "from": "MOCK2026/AV1.jpg", "to": "MOCK2026/Entrada.jpg", "text": "Entrada Cinema São Jorge", "pitch": -5, "yaw": 42 },
+        { "from": "MOCK2026/AV3.jpg", "to": "MOCK2026/AV2.jpg", "text": "Zona Comida", "pitch": 0, "yaw": -10 },
+        { "from": "MOCK2026/AV3.jpg", "to": "MOCK2026/AV1.jpg", "text": "Zona Central", "pitch": -15, "yaw": -100 },
+        { "from": "MOCK2026/AV3.jpg", "to": "MOCK2026/Entrada.jpg", "text": "Entrada Cinema São Jorge", "pitch": -5, "yaw": 42 },
+        { "from": "MOCK2026/AV2.jpg", "to": "MOCK2026/AV1.jpg", "text": "Zona Central", "pitch": -5, "yaw": -225 }
+      ],
+      "topViewHotspots": [
+        { "left": "50%", "top": "32%", "target": "MOCK2026/AV3.jpg", "title": "Zona Palco" },
+        { "left": "20%", "top": "12%", "target": "MOCK2026/Entrada.jpg", "title": "Entrada" },
+        { "left": "62%", "top": "50%", "target": "MOCK2026/AV1.jpg", "title": "Zona Central" },
+        { "left": "22%", "top": "50%", "target": "MOCK2026/AV2.jpg", "title": "Zona Comida" }
+      ]
+    }
+
+
+  ]
+}
+
+
+

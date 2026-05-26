@@ -1,23 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>360º Viewer</title>
+    <title>Rafasilart - Projetos 360º</title>
+    <link rel="icon" type="image/x-icon" href="imagens/icons/logo_branco.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="360_assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        iframe {
-            width: 100vw;
-            height: 100vh;
-            border: none;
-        }
+        body { overflow-x: hidden; }
+        .projects360-wrapper { max-width: 1180px; margin: 0 auto; padding: 30px 20px 80px; }
+        .projects360-intro { text-align: center; margin: 20px auto 45px; max-width: 760px; }
+        .projects360-intro h1 { font-size: clamp(2rem, 5vw, 4rem); margin-bottom: 12px; }
+        .projects360-intro p { line-height: 1.7; opacity: .85; }
+        .projects360-wrapper .project-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 340px)); justify-content: center; align-items: start; gap: 34px; min-height: 0; }
+        .projects360-wrapper .project-card { width: 100%; text-decoration: none; }
     </style>
 </head>
 <body>
-    <iframe src="https://artrafsia.github.io/"></iframe>
+    
+
+    <main class="projects360-wrapper">
+        <section class="projects360-intro" data-aos="fade-up">
+            <h1>Projetos 360º</h1>
+            <p>Escolhe um projeto para abrir a experiência 360º numa página própria, separada dos restantes projetos.</p>
+        </section>
+        <section class="project-list" id="project-list" data-aos="fade-up"></section>
+    </main>
+
+    <script>window.SITE360_ROOT = "360_assets/"; window.SITE360_PROJECT_BASE = "360/";</script>
+    <script src="360_assets/js/main.js"></script>
+    <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="referrer" content="no-referrer" />
+    <title>WORTEN MOCK FESTIVAL 2026 - Cinema São Jorge</title>
+    <link rel="stylesheet" href="https://cdn.pannellum.org/2.5/pannellum.css"/>
+    <script src="https://cdn.pannellum.org/2.5/pannellum.js"></script>
+    <link rel="stylesheet" href="../../360_assets/css/style.css"/>
+</head>
+<body>
+    <div id="panorama" class="viewer"></div>
+    <div id="viewer-bar">
+        <div id="viewer-actions">
+            <button id="topview-button">Top View</button>
+            <button id="images-button" style="display:none">Imagens</button>
+            <button id="share-button">Partilhar</button>
+        </div>
+    </div>
+
+    <div id="gallery-overlay">
+        <div id="gallery-header">
+            <span id="gallery-title">Imagens</span>
+            <button id="gallery-close">&times;</button>
+        </div>
+        <div id="gallery-grid"></div>
+    </div>
+
+    <div id="lightbox">
+        <button id="lightbox-close">&times;</button>
+        <button id="lightbox-prev">&#8249;</button>
+        <button id="lightbox-next">&#8250;</button>
+        <div id="lightbox-img-wrapper">
+            <img id="lightbox-img" src="" alt="" />
+        </div>
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <div id="room-selector-container">
+        <div id="current-room"></div>
+        <div id="room-switcher"></div>
+    </div>
+    <div id="share-feedback">Link copiado!</div>
+    <button id="room-switcher-toggle" aria-label="Mostrar salas">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div id="topview-overlay">
+      <img src="" alt="Top View" id="topview-image" />
+      <div id="topview-hotspots-container"></div>
+    </div>
+
+    <script>window.SITE360_ROOT = "../../360_assets/"; window.SITE360_PROJECT_ID = "mock-festival2026";</script>
+    <script src="../../360_assets/js/viewer.js"></script>
+</body>
+</html>
