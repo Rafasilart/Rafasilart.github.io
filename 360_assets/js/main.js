@@ -1,6 +1,7 @@
 (() => {
   const rootPath = window.SITE360_ROOT || "";
   const projectBasePath = window.SITE360_PROJECT_BASE || "360/";
+  const excludeProjects = new Set(window.SITE360_EXCLUDE_PROJECTS || []);
 
   fetch(rootPath + "data.json")
     .then((res) => res.json())
@@ -10,7 +11,9 @@
 
       container.innerHTML = "";
 
-      data.projects.forEach((project) => {
+      data.projects
+        .filter((project) => !excludeProjects.has(project.id))
+        .forEach((project) => {
         const card = document.createElement("a");
         card.className = "project-card";
         card.href = `${projectBasePath}${project.id}/`;
