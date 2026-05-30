@@ -160,11 +160,12 @@
       "topViewImage": "img/MOCK2026/topview.jpg",
       "images": [
         { "file": "WortenMockCAST.jpg", "caption": "WortenMockCAST" },
-        { "file": "PorticoAV.jpg", "caption": "Pórtico" },
+        { "file": "Merch.jpg", "caption": "Merchandise" },
         { "file": "Palco.jpg", "caption": "Palco" },
         { "file": "Artefacto_Worten01.jpg", "caption": "Artefacto Frente" },
         { "file": "Artefacto_Worten02.jpg", "caption": "Artefacto Lado" },
-        { "file": "Artefacto_Worten03.jpg", "caption": "Artefacto Trás" }
+        { "file": "Artefacto_Worten03.jpg", "caption": "Artefacto Trás" },
+        { "file": "ManoelDeOliveira_PISO2.jpg", "caption": "Manoel de Oliveira - MOCK" }
         
 
         
@@ -181,7 +182,7 @@
        
         { "name": "Entrada", "file": "MOCK2026/Entrada.jpg"},
         { "name": "Piso1", "file": "MOCK2026/Piso1.jpg" },
-       
+        { "name": "Zona Radio Comercial", "file": "MOCK2026/Piso-1.jpg" },
         { "name": "Escadas", "file": "MOCK2026/Escadas.jpg" },
         { "name": "Piso2", "file": "MOCK2026/Piso2.jpg" },
         { "name": "AV 1", "file": "MOCK2026/AV1.jpg" },
@@ -192,7 +193,7 @@
         { "from": "MOCK2026/Entrada.jpg", "to": "MOCK2026/Piso1.jpg", "text": "Entrar no Piso 1", "pitch": -15, "yaw": 10 },
         { "from": "MOCK2026/Entrada.jpg", "to": "MOCK2026/AV1.jpg", "text": "Avenida da Liberdade", "pitch": -15, "yaw": 180 },
         { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Escadas.jpg", "text": "Ir para Escadas", "pitch": -5, "yaw": -13 },
-        { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Zona_Radio.jpg", "text": "Ir para Zona Radio Comercial", "pitch": -8, "yaw": 6 },
+        { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Piso-1.jpg", "text": "Ir para Zona Radio Comercial", "pitch": -8, "yaw": 6 },
         { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Sala2.jpg", "text": "Sala 2", "pitch": -5, "yaw": 45 },
         { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Sala3_FFMS.jpg", "text": "Sala 3", "pitch": -5, "yaw": 123 },
         { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Entrada.jpg", "text": "Entrada", "pitch": -10, "yaw": 178 },
@@ -207,7 +208,7 @@
         { "from": "MOCK2026/Sala1-1.jpg", "to": "MOCK2026/Piso2.jpg", "text": "Piso 2", "pitch": 0, "yaw": -210 },
         { "from": "MOCK2026/Sala1-2.jpg", "to": "MOCK2026/Piso2.jpg", "text": "Piso 2", "pitch": 0, "yaw": -150 },
         { "from": "MOCK2026/Sala1-2.jpg", "to": "MOCK2026/Piso2.jpg", "text": "Piso 2", "pitch": 0, "yaw": -210 },
-        { "from": "MOCK2026/Zona_Radio.jpg", "to": "MOCK2026/Piso1.jpg", "text": "Piso 1", "pitch": 0, "yaw": -160 },
+        { "from": "MOCK2026/Piso-1.jpg", "to": "MOCK2026/Piso1.jpg", "text": "Piso 1", "pitch": 0, "yaw": -160 },
         { "from": "MOCK2026/Sala3_FFMS.jpg", "to": "MOCK2026/Piso1.jpg", "text": "Piso 1", "pitch": -5, "yaw": 180 },
         { "from": "MOCK2026/Sala3_Cinema.jpg", "to": "MOCK2026/Piso1.jpg", "text": "Piso 1", "pitch": -5, "yaw": 180 },
         { "from": "MOCK2026/Sala3_Cinema.jpg", "to": "MOCK2026/Sala4.jpg", "text": "Sala 4", "pitch": -8, "yaw": 32 },
@@ -215,12 +216,12 @@
         { "from": "MOCK2026/Sala4.jpg", "to": "MOCK2026/Sala3_FFMS.jpg", "text": "Sala 3", "pitch": -5, "yaw": -40 },
         { "from": "MOCK2026/Sala2.jpg", "to": "MOCK2026/Piso1.jpg", "text": "Piso 1", "pitch": 0, "yaw": 200 },
         { "from": "MOCK2026/AV1.jpg", "to": "MOCK2026/AV2.jpg", "text": "Zona Comida", "pitch": -5, "yaw": -10 },
-        { "from": "MOCK2026/AV1.jpg", "to": "MOCK2026/AV3.jpg", "text": "Zona Palco", "pitch": -15, "yaw": 100 },
+        { "from": "MOCK2026/AV1.jpg", "to": "MOCK2026/AV3.jpg", "text": "Zona Central", "pitch": -10, "yaw": 250 },
         { "from": "MOCK2026/AV1.jpg", "to": "MOCK2026/Entrada.jpg", "text": "Entrada Cinema São Jorge", "pitch": -5, "yaw": 42 },
-        { "from": "MOCK2026/AV3.jpg", "to": "MOCK2026/AV2.jpg", "text": "Zona Comida", "pitch": 0, "yaw": -10 },
-        { "from": "MOCK2026/AV3.jpg", "to": "MOCK2026/AV1.jpg", "text": "Zona Central", "pitch": -15, "yaw": -100 },
-        { "from": "MOCK2026/AV3.jpg", "to": "MOCK2026/Entrada.jpg", "text": "Entrada Cinema São Jorge", "pitch": -5, "yaw": 42 },
-        { "from": "MOCK2026/AV2.jpg", "to": "MOCK2026/AV1.jpg", "text": "Zona Central", "pitch": -5, "yaw": -225 }
+        { "from": "MOCK2026/AV3.jpg", "to": "MOCK2026/AV2.jpg", "text": "Zona Comida", "pitch": -5, "yaw": 0 },
+        { "from": "MOCK2026/AV3.jpg", "to": "MOCK2026/AV1.jpg", "text": "Zona Palco", "pitch": -8, "yaw": 30 },
+        { "from": "MOCK2026/AV2.jpg", "to": "MOCK2026/AV1.jpg", "text": "Zona Central", "pitch": 0, "yaw": -240 },
+        { "from": "MOCK2026/AV2.jpg", "to": "MOCK2026/Entrada.jpg", "text": "Entrada Cinema São Jorge", "pitch": -5, "yaw": 42 }
       ],
       "topViewHotspots": [
         { "left": "50%", "top": "32%", "target": "MOCK2026/AV3.jpg", "title": "Zona Palco" },
