@@ -160,12 +160,15 @@
       "topViewImage": "img/MOCK2026/topview.jpg",
       "images": [
         { "file": "WortenMockCAST.jpg", "caption": "WortenMockCAST" },
+        { "file": "PorticoAV.jpg", "caption": "Pórtico" },
         { "file": "Merch.jpg", "caption": "Merchandise" },
         { "file": "Palco.jpg", "caption": "Palco" },
         { "file": "Artefacto_Worten01.jpg", "caption": "Artefacto Frente" },
         { "file": "Artefacto_Worten02.jpg", "caption": "Artefacto Lado" },
         { "file": "Artefacto_Worten03.jpg", "caption": "Artefacto Trás" },
         { "file": "ManoelDeOliveira_PISO2.jpg", "caption": "Manoel de Oliveira - MOCK" }
+       
+
         
 
         
