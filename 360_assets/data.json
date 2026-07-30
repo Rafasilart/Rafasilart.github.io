@@ -164,8 +164,8 @@
         { "file": "Merch.jpg", "caption": "Merchandise" },
         { "file": "Palco.jpg", "caption": "Palco" },
         { "file": "Artefacto_Worten01.jpg", "caption": "Artefacto Frente" },
-        { "file": "Artefacto_Worten02.jpg", "caption": "Artefacto Lado" },
-        { "file": "Artefacto_Worten03.jpg", "caption": "Artefacto Trás" }
+        { "file": "Artefacto_Worten02.jpg", "caption": "Artefacto Lado" }
+        
         
        
 
@@ -178,6 +178,7 @@
         { "name": "Sala 1 - PODCAST", "file": "MOCK2026/Sala1_PODCAST.jpg", "versao": "2" },
         { "name": "Sala 1 - STAND UP", "file": "MOCK2026/Sala1_STANDUP.jpg", "versao": "2" },
         { "name": "Sala 2", "file": "MOCK2026/Sala2.jpg" },
+        { "name": "Sala 2 - Bumba Na Fofinha", "file": "MOCK2026/Sala2_Bumba.jpg" },
         { "name": "Sala 3 - V1", "file": "MOCK2026/Sala3_V1.jpg", "versao": "2" },
         { "name": "Sala 3 - V2", "file": "MOCK2026/Sala3_V2.jpg", "versao": "2" },
         { "name": "Sala 4", "file": "MOCK2026/Sala4.jpg" },
@@ -219,6 +220,7 @@
         { "from": "MOCK2026/Sala3_V1.jpg", "to": "MOCK2026/Sala4.jpg", "text": "Sala 4", "pitch": -8, "yaw": 41 },
         { "from": "MOCK2026/Sala4.jpg", "to": "MOCK2026/Sala3_FFMS.jpg", "text": "Sala 3", "pitch": -5, "yaw": -40 },
         { "from": "MOCK2026/Sala2.jpg", "to": "MOCK2026/Piso1.jpg", "text": "Piso 1", "pitch": 0, "yaw": 200 },
+        { "from": "MOCK2026/Sala2_Bumba.jpg", "to": "MOCK2026/Piso1.jpg", "text": "Piso 1", "pitch": 0, "yaw": 200 },
         { "from": "MOCK2026/AV1.jpg", "to": "MOCK2026/AV2.jpg", "text": "Zona Comida", "pitch": -5, "yaw": -10 },
         { "from": "MOCK2026/AV1.jpg", "to": "MOCK2026/AV3.jpg", "text": "Zona Central", "pitch": -10, "yaw": 250 },
         { "from": "MOCK2026/AV1.jpg", "to": "MOCK2026/Entrada.jpg", "text": "Entrada Cinema São Jorge", "pitch": -5, "yaw": 42 },
