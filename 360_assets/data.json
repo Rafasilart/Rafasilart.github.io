@@ -187,7 +187,7 @@
        
         { "name": "Entrada", "file": "MOCK2026/Entrada.jpg"},
         { "name": "Piso1", "file": "MOCK2026/Piso1.jpg" },
-        { "name": "Zona Radio Comercial", "file": "MOCK2026/Piso-1.jpg" },
+        { "name": "Zona MEO", "file": "MOCK2026/Piso-1.jpg" },
         { "name": "Escadas", "file": "MOCK2026/Escadas.jpg" },
         { "name": "Piso2", "file": "MOCK2026/Piso2.jpg" },
         { "name": "AV 1", "file": "MOCK2026/AV1.jpg" },
@@ -198,7 +198,7 @@
         { "from": "MOCK2026/Entrada.jpg", "to": "MOCK2026/Piso1.jpg", "text": "Entrar no Piso 1", "pitch": -15, "yaw": 10 },
         { "from": "MOCK2026/Entrada.jpg", "to": "MOCK2026/AV1.jpg", "text": "Avenida da Liberdade", "pitch": -15, "yaw": 180 },
         { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Escadas.jpg", "text": "Ir para Escadas", "pitch": -5, "yaw": -13 },
-        { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Piso-1.jpg", "text": "Ir para Zona Radio Comercial", "pitch": -8, "yaw": 6 },
+        { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Piso-1.jpg", "text": "Ir para Zona MEO", "pitch": -8, "yaw": 6 },
         { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Sala2.jpg", "text": "Sala 2", "pitch": -5, "yaw": 45 },
         { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Sala3_V2_STANDUP.jpg", "text": "Sala 3", "pitch": -5, "yaw": 123 },
         { "from": "MOCK2026/Piso1.jpg", "to": "MOCK2026/Entrada.jpg", "text": "Entrada", "pitch": -10, "yaw": 178 },
