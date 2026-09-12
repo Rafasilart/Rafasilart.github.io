@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafasilart - Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../imagens/icons/logo_branco.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  
+     <!-- Preloader -->
+     <div class="preloader">
+      <div class="loader">
+          <img src="../imagens/icons/logo_branco.png" alt="Rafasilart Logo" class="rotating-logo">
+      </div>
+  </div>
+  
+  <div class="logo">
+      <img src="../imagens/icons/logo_branco.png" alt="">
+      <h2>Rafael Silva</h2>
+      <p>Multimedia Artist | 3D Modeling and Animation</p>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+    <nav>
+        
+        <!-- Menu de navegação -->
+      <ul id="nav-links">
+          <li><a href="../index.html">Portfolio</a></li>
+          <li>|</li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li>|</li>
+          <li><a href="../aboutme.html">About Me</a></li>
+      </ul>
+  </nav>
+
+<div class="container">
+    <section id="project">
+        <div class="project-container">
+            <!-- Cover image and text -->
+            <div class="text-container" id="Focus">
+                <h1>WORTEN MOCK FEST 2026 - 3D Mockup</h1>
+                <h6 class="calendario">July / August 2026</h6> 
+                <p>
+                    For the <strong> WORTEN MOCK FEST</strong>, I was responsible for the 3D visualization of the main stage and festival area, 
+                    collaborating closely with the producer to bring his vision to life. 
+                    I created a simplified 3D construction of the venue to help visualize the future event, 
+                    making adjustments to the different areas whenever necessary. 
+                    The project included detailed renders, 
+                    layout planning, a 360º interactive experience to facilitate visualization.
+                </p>
+                <p>
+                  
+                  <a class="link-eventos" href="https://mockfest.pt" target="_blank"><strong>WORTEN MOCK FEST Official Website</strong></a>
+                </p>
+                <p>
+                    Below you can explore the <strong>360º virtual tour </strong> of the festival area. 
+                    The three dots in the bottom right corner allow you to directly choose a location. 
+                    The "Top View" button lets you see the avenue and explore the exterior area in front of Cinema São Jorge.
+
+                </p>
+                <p >Full page viewer: <a class=" link-eventos" href="https://rafasilart.com/360/mock-festival2026/" target="_blank">360º Viewer</a></p>
+
+            </div>
+            
+            <!-- 360º -->
+            <div style="width:60%; margin:auto; margin-top: 100px; margin-bottom: 100px; transform: scale(1.3);">
+                <iframe
+                  src="https://rafasilart.com/360/mock-festival2026/" 
+                  width="100%" 
+                  height="400" 
+                  style="border:0;border-radius:12px;box-shadow:0 2px 16px rgba(0,0,0,0.15);" 
+                  allowfullscreen 
+                  loading="lazy"
+                  title="MockFestival 360º Virtual Tour">
+                </iframe>
+                
+            </div>
+<p class="legendas">360º Virtual Tour - Cinema São Jorge (Worten MOCK Fest)</p>
+
+          
+
+            <div class="gallery-row">
+  
+  <div class="gallery-column">
+    <img src="../imagens/Mock2026/Palco1_V1.jpg" class="gallery-image" onclick="openModal(1)">
+  </div>
+  <div class="gallery-column">
+    <img src="../imagens/Mock2026/Palco1_V2.jpg" class="gallery-image" onclick="openModal(2)">
+  </div>
+  <div class="gallery-column">
+    <img src="../imagens/Mock2026/Palco2_V1.jpg" class="gallery-image" onclick="openModal(3)">
+  </div>
+  <div class="gallery-column">
+    <img src="../imagens/Mock2026/Palco2_V2.jpg" class="gallery-image" onclick="openModal(4)">
+  </div>
+  <div class="gallery-column">
+    <img src="../imagens/Mock2026/Palco3.jpg" class="gallery-image" onclick="openModal(5)">
+  </div>
+  <div class="gallery-column">
+    <img src="../imagens/Mock2026/Palco4.jpg" class="gallery-image" onclick="openModal(6)">
+  </div>
+  <div class="gallery-column">
+    <img src="../imagens/Mock2026/Piso2.jpg" class="gallery-image" onclick="openModal(7)">
+  </div>
+  <div class="gallery-column">
+    <img src="../imagens/Mock2026/Entrada.jpg" class="gallery-image" onclick="openModal(8)">
+  </div>
+  <div class="gallery-column">
+    <img src="../imagens/Mock2026/Merch.jpg" class="gallery-image" onclick="openModal(9)">
+  </div>
+  <div class="gallery-column">
+    <img src="../imagens/Mock2026/Sinais.jpg" class="gallery-image" onclick="openModal(10)">
+  </div>
+  <div class="gallery-column">
+    <img src="../imagens/Mock2026/Worten.jpg" class="gallery-image" onclick="openModal(11)">
+  </div>
+  <div class="gallery-column">
+    <img src="../imagens/Mock2026/Palco.jpg" class="gallery-image" onclick="openModal(12)">
+  </div>
+  <div class="gallery-column">
+    <img src="../imagens/Mock2026/MOCK_CAST.jpg" class="gallery-image" onclick="openModal(13)">
+  </div>
+</div>
+
+            <div class="text-container" id="Focus">
+                <h2>Live Event</h2>
+                <p>
+    The event took place on <strong>August 28, 29, and 30, 2026</strong>, featuring a wide range of comedians. The lineup included well-known Portuguese acts such as the reunion of the Gato Fedorento trio (Ricardo Araújo Pereira, Miguel Góis, and José Diogo Quintela) in "Assim Vamos ter de Falar de Outra Maneira", Hugo Sousa, and Guilherme Duarte, among others.
+
+    In the international section, comedians like Chris D'Elia, making his debut in Portugal, Michelle Wolf, and Sam Morril were highlights of the festival.
+</p>
+<p>Photographs from the event:</p>
+
+<div class="event-carousel" aria-label="Photographs from the event">
+  <button class="carousel-button carousel-prev" type="button" aria-label="Previous photograph">&#10094;</button>
+  <div class="carousel-track">
+    <img class="carousel-photo active" src="../imagens/Mock2026/carrossel/sala1.jpg" alt="MOCK Fest entrance">
+    <img class="carousel-photo" src="../imagens/Mock2026/carrossel/sala1_V2.jpg" alt="Main stage at MOCK Fest">
+    <img class="carousel-photo" src="../imagens/Mock2026/carrossel/sala2.jpg" alt="First floor of the festival venue">
+    <img class="carousel-photo" src="../imagens/Mock2026/carrossel/sala2_V2.jpg" alt="Outdoor stage on Avenida da Liberdade">
+    <img class="carousel-photo" src="../imagens/Mock2026/carrossel/sala3.jpg" alt="Super Bock backdrop at the festival">
+    <img class="carousel-photo" src="../imagens/Mock2026/carrossel/sala3_V2.jpg" alt="Super Bock backdrop at the festival">
+    <img class="carousel-photo" src="../imagens/Mock2026/carrossel/sala4.jpg" alt="Super Bock backdrop at the festival">
+    <img class="carousel-photo" src="../imagens/Mock2026/carrossel/palco.jpg" alt="Super Bock backdrop at the festival">
+    <img class="carousel-photo" src="../imagens/Mock2026/carrossel/Merch.jpg" alt="Super Bock backdrop at the festival">
+  </div>
+  <button class="carousel-button carousel-next" type="button" aria-label="Next photograph">&#10095;</button>
+  <div class="carousel-dots" aria-label="Choose a photograph"></div>
+</div>
+
+<style>
+  
+</style>
+
+<script>
+  (() => {
+    const photos = document.querySelectorAll('.carousel-photo');
+    const dots = document.querySelector('.carousel-dots');
+    let currentPhoto = 0;
+    photos.forEach((photo, index) => {
+      const dot = document.createElement('button');
+      dot.className = 'carousel-dot' + (index === 0 ? ' active' : '');
+      dot.type = 'button';
+      dot.setAttribute('aria-label', `Show photograph ${index + 1}`);
+      dot.addEventListener('click', () => showPhoto(index));
+      dots.appendChild(dot);
+    });
+    const carouselDots = dots.querySelectorAll('.carousel-dot');
+    function showPhoto(index) {
+      currentPhoto = (index + photos.length) % photos.length;
+      photos.forEach((photo, i) => photo.classList.toggle('active', i === currentPhoto));
+      carouselDots.forEach((dot, i) => dot.classList.toggle('active', i === currentPhoto));
+    }
+    document.querySelector('.carousel-prev').addEventListener('click', () => showPhoto(currentPhoto - 1));
+    document.querySelector('.carousel-next').addEventListener('click', () => showPhoto(currentPhoto + 1));
+  })();
+</script>
+
+
+
+                
+                
+            </div>
+
+
+              </div>
+
+
+
+              
+           
+        </div>
+
+        <!--  <p class="legendas-gallery">Photos from the Event (after 30 august)</p> --> 
+   
+   
+
+<div class="software-proficiency">
+    <div class="software">
+      <img src="../imagens/icons/blender-icon.png" alt="Blender">
+      <span>Blender</span>
+    </div>
+    <div class="software">
+      <img src="../imagens/icons/photoshop-icon.png" alt="Photoshop">
+      <span>Photoshop</span>
+    </div>
+    <div class="software">
+      <img src="../imagens/icons/illustrator-icon.png" alt="Illustrator">
+      <span>Illustrator</span>
+    </div>
+    
+</div>
+
+     <!-- Footer Redesenhado -->
+     <footer>
+      <div class="footer-content">
+          <img src="../imagens/icons/charcar.png" alt="Rafasilart Logo" class="footer-logo">
+          
+          <div class="footer-nav">
+              <a href="../index.html">Portfolio</a>
+              <a href="../projects.html">Projects</a>
+              <a href="../aboutme.html">About Me</a>
+          </div>
+          
+         <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rafasilart/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.artstation.com/rafasilart" target="_blank"><i class="fab fa-artstation"></i></a>
+                    <a href="https://www.instagram.com/rafasilart/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/rafasilart" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+          
+          <div class="copyright">
+              <p>© 2024 Rafael Silva (Rafasilart). Todos os direitos reservados.</p>
+              <p>Made with <span style="color: var(--laranja-secundario);">❤️</span> by me</p>
+              <p>Contact: <a href="mailto:rafasilart@gmail.com">rafasilart@gmail.com</a></p>
+          </div>
+      </div>
+  </footer>
+
+      <a href="#" class="back-to-top">
+        <img src="../imagens/icons/Arrow.png" alt="" srcset="">
+      </a>
+
+     <!-- Modal -->
+<div id="modal" class="modal" onclick="closeModalOnOutsideClick(event)">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="slide">
+      <img src="../imagens/Mock2026/Palco1_V1.jpg">
+      <p class="modal-caption">Stage 1 - Main version</p>
+    </div>
+    <div class="slide">
+      <img src="../imagens/Mock2026/Palco1_V2.jpg">
+      <p class="modal-caption">Stage 1 - Alternative version</p>
+    </div>
+    <div class="slide">
+      <img src="../imagens/Mock2026/Palco2_V1.jpg">
+      <p class="modal-caption">Stage 2 - Front view</p>
+    </div>
+    <div class="slide">
+      <img src="../imagens/Mock2026/Palco2_V2.jpg">
+      <p class="modal-caption">Stage 2 - Alternative angle</p>
+    </div>
+    <div class="slide">
+      <img src="../imagens/Mock2026/Palco3.jpg">
+      <p class="modal-caption">Stage 3</p>
+    </div>
+    <div class="slide">
+      <img src="../imagens/Mock2026/Palco4.jpg">
+      <p class="modal-caption">Stage 4</p>
+    </div>
+    <div class="slide">
+      <img src="../imagens/Mock2026/Piso2.jpg">
+      <p class="modal-caption">Floor 2 - Worten Space</p>
+    </div>
+    <div class="slide">
+      <img src="../imagens/Mock2026/Entrada.jpg">
+      <p class="modal-caption">Festival entrance</p>
+    </div>
+    <div class="slide">
+      <img src="../imagens/Mock2026/Merch.jpg">
+      <p class="modal-caption">Merchandising area</p>
+    </div>
+    <div class="slide">
+      <img src="../imagens/Mock2026/Sinais.jpg">
+      <p class="modal-caption">Wayfinding and signage</p>
+    </div>
+    <div class="slide">
+      <img src="../imagens/Mock2026/Worten.jpg">
+      <p class="modal-caption">Worten branding area</p>
+    </div>
+    <div class="slide">
+      <img src="../imagens/Mock2026/Palco.jpg">
+      <p class="modal-caption">Main stage overview</p>
+    </div>
+    <div class="slide">
+      <img src="../imagens/Mock2026/MOCK_CAST.jpg">
+      <p class="modal-caption">MOCK Fest cast / identity</p>
+    </div>
+    <a class="prev" onclick="changeSlide(-1)">❮</a>
+    <a class="next" onclick="changeSlide(1)">❯</a>
+  </div>
+</div>
+
+     
+      
+      <script>
+        let currentIndex = 0;
+      
+        function openModal(index) {
+          currentIndex = index;
+          document.getElementById("modal").style.display = "flex";
+          showSlide(currentIndex);
+        }
+      
+        function closeModal() {
+          document.getElementById("modal").style.display = "none";
+        }
+      
+        function changeSlide(n) {
+          showSlide(currentIndex += n);
+        }
+      
+        function showSlide(index) {
+          const slides = document.querySelectorAll(".slide");
+          if (index > slides.length) currentIndex = 1;
+          if (index < 1) currentIndex = slides.length;
+      
+          slides.forEach(slide => slide.style.display = "none");
+          slides[currentIndex - 1].style.display = "block";
+        }
+      
+        function closeModalOnOutsideClick(event) {
+          const modal = document.getElementById("modal");
+          const content = document.querySelector(".modal-content");
+          if (!content.contains(event.target)) closeModal();
+        }
+      </script>
+      
+
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById('nav-links');
+        nav.classList.toggle('show');
+    }
+</script>
+<script src="../scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>

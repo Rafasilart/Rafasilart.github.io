@@ -1716,3 +1716,42 @@
   margin-top: var(--espacamento-grande);
   text-align: center;
 }
+
+.event-carousel {
+    position: relative;
+    width: min(100%, 900px);
+    margin: 24px auto 40px;
+    padding: 0 48px 34px;
+    box-sizing: border-box;
+  }
+  .carousel-track {
+    height: clamp(240px, 55vw, 520px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #111;
+  }
+  .carousel-photo { display: none; width: 100%; height: 100%; object-fit: contain; }
+  .carousel-photo.active { display: block; }
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    border: 0;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    color: #fff;
+    background: rgba(0, 0, 0, .65);
+    cursor: pointer;
+    font-size: 22px;
+  }
+  .carousel-button:hover { background: rgba(0, 0, 0, .9); }
+  .carousel-prev { left: 4px; }
+  .carousel-next { right: 4px; }
+  .carousel-dots { position: absolute; bottom: 6px; left: 0; right: 0; text-align: center; }
+  .carousel-dot { display: inline-block; width: 9px; height: 9px; margin: 0 4px; border: 0; border-radius: 50%; background: #aaa; cursor: pointer; }
+  .carousel-dot.active { background: #333; }
