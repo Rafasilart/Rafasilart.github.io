@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafasilart - Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../imagens/icons/logo_branco.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  
+     <!-- Preloader -->
+     <div class="preloader">
+      <div class="loader">
+          <img src="../imagens/icons/logo_branco.png" alt="Rafasilart Logo" class="rotating-logo">
+      </div>
+  </div>
+  
+  <div class="logo">
+      <img src="../imagens/icons/logo_branco.png" alt="">
+      <h2>Rafael Silva</h2>
+      <p>Multimedia Artist | 3D Modeling and Animation</p>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+    <nav>
+        
+        <!-- Menu de navegação -->
+      <ul id="nav-links">
+          <li><a href="../index.html">Portfolio</a></li>
+          <li>|</li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li>|</li>
+          <li><a href="../aboutme.html">About Me</a></li>
+      </ul>
+  </nav>
+
+
+<div class="container">
+   
+    <section id="project">
+        <div class="project-container">
+            <!-- Cover image and text -->
+            <div class="text-container" id="Focus">
+                <h1>Falsos Lentos S7 - Mockup 3D</h1>
+                <h6 class="calendario"> May 25, 2026</h6> 
+                <p>For the Falsos Lentos live show, I collaborated with Art Director Marina Faria, who came up with the set concept to design a
+                  nd assemble the 90s-inspired 3D stage scenery.</p>
+
+<p>
+About the event:
+
+Now in its 7th season, <i>Falsos Lentos</i> is a podcast presented by Bwin and hosted by Diogo Batáguas, Manuel Cardoso, and Carlos Coutinho Vilhena. 
+Supposedly a show/podcast about football, they almost never actually talk about football, focusing instead on sharp banter, hilarious tangents, and daily life observations.</p>
+                
+                
+                    <p>Below is a gallery showcasing the final renders of the stage made in Blender</p>               
+            </div>
+            
+            <!-- Additional images below text -->
+            <div class="gallery">
+                <img src="../imagens/FalsosLentos2026/Aberto.jpg" alt="Frame Render 1">
+                <p class="legendas">3D Render</p>
+                <img src="../imagens/FalsosLentos2026/Aberto2.jpg" alt="Frame Render 2">
+                <p class="legendas">3D Render</p>
+                <img src="../imagens/FalsosLentos2026/Central.jpg" alt="Frame Print">
+                <p class="legendas">3D Render</p>
+                <img src="../imagens/FalsosLentos2026/Geral.jpg" alt="Frame Print">
+                <p class="legendas">3D Render</p>
+                <img src="../imagens/FalsosLentos2026/Geral2.jpg" alt="Frame Print">
+                <p class="legendas">3D Render</p>
+                <img src="../imagens/FalsosLentos2026/Close.jpg" alt="Frame Print">
+                <p class="legendas">3D Render</p>
+                <img src="../imagens/FalsosLentos2026/Viewport.jpg" alt="Frame Print">
+                <p class="legendas">Viewport Render</p>
+
+            </div>
+
+        </div>
+
+            <p class="legendas-gallery"> Live Podcast Show Photos</p>
+            <div class="gallery-row">
+               
+                <div class="gallery-column">
+                  <img src="../imagens/FalsosLentos2026/Cenario1.jpg" class="gallery-image" onclick="openModal(1)">
+                </div>
+               
+                <div class="gallery-column">
+                  <img src="../imagens/FalsosLentos2026/Cenario2.jpg" class="gallery-image" onclick="openModal(3)">
+                </div>
+                
+
+                
+              </div>
+              
+             
+              
+    </section>
+
+        
+
+<div class="software-proficiency">
+    <div class="software">
+      <img src="../imagens/icons/blender-icon.png" alt="Blender">
+      <span>Blender</span>
+    </div>
+    
+    
+  </div>
+</div>
+     <!-- Footer Redesenhado -->
+     <footer>
+      <div class="footer-content">
+          <img src="../imagens/icons/charcar.png" alt="Rafasilart Logo" class="footer-logo">
+          
+          <div class="footer-nav">
+              <a href="../index.html">Portfolio</a>
+              <a href="../projects.html">Projects</a>
+              <a href="../aboutme.html">About Me</a>
+          </div>
+          
+         <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rafasilart/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.artstation.com/rafasilart" target="_blank"><i class="fab fa-artstation"></i></a>
+                    <a href="https://www.instagram.com/rafasilart/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/rafasilart" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+          
+          <div class="copyright">
+              <p>© 2026 Rafael Silva (Rafasilart). Todos os direitos reservados.</p>
+              <p>Made with <span style="color: var(--laranja-secundario);">❤️</span> by me</p>
+              <p>Contact: <a href="mailto:rafasilart@gmail.com">rafasilart@gmail.com</a></p>
+          </div>
+      </div>
+  </footer>
+
+
+      <a href="#" class="back-to-top">
+        <img src="../imagens/icons/Arrow.png" alt="" srcset="">
+      </a>
+
+
+      <div id="modal" class="modal" onclick="closeModalOnOutsideClick(event)">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="slide"><img src="../imagens/FalsosLentos2026/Cenario1.jpg"></div>
+  
+          <div class="slide"><img src="../imagens/FalsosLentos2026/Cenario2.jpg"></div>
+          
+          <a class="prev" onclick="changeSlide(-1)">❮</a>
+          <a class="next" onclick="changeSlide(1)">❯</a>
+        </div>
+      </div>
+      
+      <script>
+        let currentIndex = 0;
+      
+        function openModal(index) {
+          currentIndex = index;
+          document.getElementById("modal").style.display = "flex";
+          showSlide(currentIndex);
+        }
+      
+        function closeModal() {
+          document.getElementById("modal").style.display = "none";
+        }
+      
+        function changeSlide(n) {
+          showSlide(currentIndex += n);
+        }
+      
+        function showSlide(index) {
+          const slides = document.querySelectorAll(".slide");
+          if (index > slides.length) currentIndex = 1;
+          if (index < 1) currentIndex = slides.length;
+      
+          slides.forEach(slide => slide.style.display = "none");
+          slides[currentIndex - 1].style.display = "block";
+        }
+      
+        function closeModalOnOutsideClick(event) {
+          const modal = document.getElementById("modal");
+          const content = document.querySelector(".modal-content");
+          if (!content.contains(event.target)) closeModal();
+        }
+      </script>
+      
+
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById('nav-links');
+        nav.classList.toggle('show');
+    }
+</script>
+<script src="../scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
